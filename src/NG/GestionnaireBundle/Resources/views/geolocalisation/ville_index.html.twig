@@ -1,0 +1,38 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Villes{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h4>Liste des Villes référencé</h4><br/>
+
+        {% if villes|length > 0 %}
+            <table class="table table-hover table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Code Postale</th>
+                    <th scope="col">Ville</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for uneV in villes %}
+                    <tr>
+                        <td>{{ uneV.cp }}</td>
+                        <td>{{ uneV.nom }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table><br/>
+        {% else %}
+            <div class="alert alert-warning">
+                Il n'y aucune Villes. Veuillez en ajouter.
+            </div>
+        {% endif %}
+
+        {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+            <a href="/ng/geolocalisation/ville/ajout" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+        {% endif %}
+
+    </div>
+{% endblock %}

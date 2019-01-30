@@ -1,0 +1,49 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Copropriétés{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h4>Liste des Copropriétés référencé</h4><br/>
+
+        {% if immeubles|length > 0 %}
+            <table class="table table-hover table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Adresse</th>
+                    <th scope="col">Ville</th>
+                    <th scope="col">Localisation</th>
+                    <th scope="col">Consulter</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for unI in immeubles %}
+                    <tr>
+                        <td>{{ unI.code }}</td>
+                        <td>{{ unI.adresse }}</td>
+                        <td>{{ unI.ville.nom }}</td>
+                        <td>
+                            <a href="https://www.google.com/maps/@{{ unI.lattitude }},{{ unI.longitude }},20z" target="_blank" class="btn btn-outline-primary" >
+                                <img alt="google image" src="{{ asset('image/logo_gm.png') }}"  onmouseover="this.src='{{ asset("image/position_gm.png")}}';"
+                                     onmouseout="this.src='{{ asset("image/logo_gm.png")}}';"width="30"/>
+                            </a>
+                        </td>
+                        <td><a href="/ng/gestion/immeuble/code/{{ unI.code }}" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table><br/>
+        {% else %}
+            <div class="alert alert-warning">
+                Il n'y aucune Copropriétés. Veuillez en ajouter.
+            </div>
+        {% endif %}
+
+        {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+            <a href="/ng/gestion/immeuble/ajout" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+        {% endif %}
+
+    </div>
+{% endblock %}

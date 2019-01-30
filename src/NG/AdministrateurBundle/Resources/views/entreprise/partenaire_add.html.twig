@@ -1,0 +1,60 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Partenaire{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+            <h4>Ajouter un Partenaire</h4><br/>
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.nom) }}
+                    {{ form_widget(form.nom, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.type) }}
+                    {{ form_widget(form.type, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.logo) }}
+                    {{ form_widget(form.logo, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.tel) }}
+                    {{ form_widget(form.tel, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.email) }}
+                    {{ form_widget(form.email, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.adresse) }}
+                    {{ form_widget(form.adresse, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.ville) }}
+                    {{ form_widget(form.ville, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}

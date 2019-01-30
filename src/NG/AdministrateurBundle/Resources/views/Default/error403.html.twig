@@ -1,0 +1,14 @@
+{% extends':administrateur:base.html.twig' %}
+
+{% block title %}Erreur 403{% endblock %}
+
+{% block navbar %}{{ 'erreur 403'|upper }}{% endblock %}
+
+{% block body %}
+
+    <center>
+        <h4>Erreur 403 : Accès interdit</h4><br/>
+        <a href="/ng/" class="btn btn-outline-ngi">{{ "retour à l'accueil"|upper }}</a>
+    </center>
+
+{% endblock %}

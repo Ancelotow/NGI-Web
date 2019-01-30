@@ -1,0 +1,55 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Copropriété{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+            <h4>Ajouter une Copropriété</h4><br/>
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.code) }}
+                    {{ form_widget(form.code, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.image) }}
+                    {{ form_widget(form.image, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.adresse) }}
+                    {{ form_widget(form.adresse, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.ville) }}
+                    {{ form_widget(form.ville, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.lattitude) }}
+                    {{ form_widget(form.lattitude, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.longitude) }}
+                    {{ form_widget(form.longitude, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}

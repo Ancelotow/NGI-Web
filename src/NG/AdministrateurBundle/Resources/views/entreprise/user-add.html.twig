@@ -1,0 +1,85 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Employé{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h4>Formulaire d'inscription d'employer</h4><br/>
+        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+        {% if errorMdp is defined%}
+            <div class="alert alert-danger">
+                Les mot de passe sont différent.
+            </div>
+         {% elseif form_errors(form.email) != "" %}
+             <div class="alert alert-danger">
+                 L'adresse mail est déjâ utilisé.
+             </div>
+         {% elseif form_errors(form.username) != "" %}
+             <div class="alert alert-danger">
+                 Cet identifiant est déjâ utilisé.
+             </div>
+        {% endif %}
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label >Sexe</label><br/>
+                <input type="radio" value="1" name="sexe" checked>Homme&nbsp;
+                <input type="radio" value="0"  name="sexe" >Femme
+            </div>
+            <div class="col-md-4 mb-3">
+                <label >Nom</label>
+                <input type="text" class="form-control" name="nom" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label >Prénom</label>
+                <input type="text" class="form-control" name="prenom" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label>Date de naissance</label>
+                <input type="date" class="form-control" name="ddn" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label >Téléphone</label>
+                <input type="text" class="form-control" name="tel" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Adresse mail</label>
+                {{ form_widget(form.email, {'attr' : {'class' : 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label >Poste</label>
+                <select class="form-control" name="poste">
+                    <option value="4">Administrateur</option>
+                    <option value="6">Assistant comptable</option>
+                    <option value="5">Assitant gestionnaire</option>
+                    <option value="1">Comptable</option>
+                    <option value="3">Gérant</option>
+                    <option value="2" selected>Gestionnaire</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Identifiant</label>
+                {{ form_widget(form.username, {'attr' : {'class' : 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label>Mot de passe</label>
+                {{ form_widget(form.plainPassword, {'attr' : {'class' : 'form-control'}}) }}
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Confimation</label>
+                <input type="password" name="rmdp" class="form-control" placeholder="Retapez le mot de passe" required/>
+            </div>
+        </div>
+        <div>
+            <input type="submit" class="btn btn-outline-ngi" value="{{ 'ajouter'|upper }}" />
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+
+{% endblock %}

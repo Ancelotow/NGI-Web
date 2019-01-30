@@ -1,0 +1,11 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+        <h2>Bonjour {{ app.user.utilisateur.prenom }} {{ app.user.utilisateur.nom }}</h2>
+
+        <h6>Dernière connexion : {{ app.user.lastLogin|date('d/m/Y H:i:s', "Europe/Paris") }}</h6>
+
+{% endblock %}

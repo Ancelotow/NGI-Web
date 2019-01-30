@@ -1,0 +1,52 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Propriétaires{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h4>Liste des Propriétaire référencé</h4><br/>
+
+        {% if props|length > 0 %}
+            <table class="table table-hover table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Téléphone</th>
+                    <th scope="col">Adresse mail</th>
+                    <th scope="col">Adresse</th>
+                    <th scope="col">Ville</th>
+                    <th scope="col">Consulter</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for unP in props %}
+                    <tr>
+                        {% if unP.sexe == 0 %}
+                            <td>Mme. {{ unP.nom }}</td>
+                        {% else %}
+                            <td>M. {{ unP.nom }}</td>
+                        {% endif %}
+                        <td>{{ unP.prenom }}</td>
+                        <td>{{ unP.tel }}</td>
+                        <td>{{ unP.email }}</td>
+                        <td>{{ unP.adresse }}</td>
+                        <td>{{ unP.ville.nom }}</td>
+                        <td><a href="#" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table><br/>
+        {% else %}
+            <div class="alert alert-warning">
+                Il n'y aucun Proprietaire. Veuillez en ajouter.
+            </div>
+        {% endif %}
+
+        {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+            <a href="/ng/gestion/proprietaire/ajout" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+        {% endif %}
+
+    </div>
+{% endblock %}

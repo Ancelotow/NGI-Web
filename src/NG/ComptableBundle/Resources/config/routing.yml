@@ -1,0 +1,3 @@
+ng_comptable_homepage:
+    path:     /ng/comptable
+    defaults: { _controller: NGComptableBundle:Default:index }

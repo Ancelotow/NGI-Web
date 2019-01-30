@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>NG | {% block title %}{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}" />
+        {% endblock %}
+        {% block scripts %}
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        {% endblock %}
+        {% block logo %}
+            <link rel="icon" type="image/x-icon" href="{{ asset('image/logo.gif') }}" />
+        {% endblock %}
+    </head>
+    <body>
+        {% block navbar %}
+            <nav class="navbar navbar-expand-lg navbar-dark bg-ngi">
+                <a class="navbar-brand" href="/ng/">
+                    <img src="{{ asset('image/logo.gif') }}" width="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/ng/">{{ 'acceuil'|upper }}</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ 'gestion'|upper }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/ng/gestion/immeuble">Copropriétés</a>
+                                <a class="dropdown-item" href="/ng/gestion/proprietaire">Propriétaires</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ 'comptabilité'|upper }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ 'location/vente'|upper }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ 'géolocalisation'|upper }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/ng/geolocalisation/region">Région</a>
+                                <a class="dropdown-item" href="/ng/geolocalisation/departement">Département</a>
+                                <a class="dropdown-item" href="/ng/geolocalisation/ville">Ville</a>
+                            </div>
+                        </li>
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{ "ng immobilier"|upper }}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/ng/immobilier/user">Employés</a>
+                                    <a class="dropdown-item" href="/ng/immobilier/partenaire">Partenaires</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                            </li>
+                        {% endif %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ app.user.username|upper }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/logout">Déconnexion</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://ngimmobilier.crypto-extranet.com/connexion/" target="_blank" class="btn btn-crypto" >
+                        <img rel="crypto" src="{{ asset('image/crypto1.png')}}" onmouseover="this.src='{{ asset("image/crypto2.png")}}';"
+                             onmouseout="this.src='{{ asset("image/crypto1.png")}}';" width="50" />
+                    </a>&nbsp;&nbsp;
+                    <a href="https://www.fnaim.fr/19-mon-compte.htm" target="_blank" class="btn btn-fnaim" >
+                        <img rel="crypto" src="{{ asset('image/fnaim1.png')}}" onmouseover="this.src='{{ asset("image/fnaim2.png")}}';"
+                             onmouseout="this.src='{{ asset("image/fnaim1.png")}}';" width="50" />
+                    </a>
+
+                </div>
+            </nav><br/>
+        {% endblock %}
+            <center>
+                {% block body %}{% endblock %}
+            </center>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

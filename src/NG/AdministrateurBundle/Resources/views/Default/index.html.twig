@@ -1,0 +1,43 @@
+{% extends':administrateur:base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block navbar %}{{ 'connexion'|upper }}{% endblock %}
+
+{% block body %}
+    <center>
+        <h4>Connexion</h4><br/>
+
+        {% if error %}
+            <div class="alert alert-danger">
+                {%  if error.messageKey|trans(error.messageData, 'security') == "Invalid credentials."%}
+                    Identifiant ou mot de passe incorrect.
+                {% elseif error.messageKey|trans(error.messageData, 'security') == 'Account is disabled.' %}
+                    Votre compte est bloqué.<br/> Pour plus d'informations, consulté votre gérant ou votre administrateur.
+                {% else %}
+                    Erreur dans le code, contactez votre développeur.
+                {%  endif %}
+            </div><br/>
+        {% endif %}
+
+        <form action="{{ path("fos_user_security_check") }}" method="post">
+            {% if csrf_token %}
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            {% endif %}
+
+            <div class="col-md-4 mb-3">
+                <label for="username">{{ 'Identifiant'|trans }}</label>
+                <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" />
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label for="password">{{ 'Mot de passe'|trans }}</label>
+                <input type="password" class="form-control" id="password" name="_password" required="required" />
+            </div>
+
+            <input type="submit" class="btn btn-outline-ngi" id="_submit" name="_submit" value="{{ 'Connexion'|trans }}" />
+        </form>
+    </center>
+
+    <p style="position: absolute; bottom: 0; left: 0; right: 0">Version 2.1</p>
+{% endblock %}

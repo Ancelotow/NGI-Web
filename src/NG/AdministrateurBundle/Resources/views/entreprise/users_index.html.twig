@@ -1,0 +1,52 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Employés{% endblock %}
+
+{% block body %}
+
+    <h4>Liste des Employés</h4><br/>
+
+    <table class="table table-hover table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Identifiant</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Date de Naissance</th>
+            <th scope="col">Téléphone</th>
+            <th scope="col">Adresse mail</th>
+            <th scope="col">Poste</th>
+            <th scope="col">Dernière connexion</th>
+            <th scope="col">Activé/Bloqué</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for unU in users %}
+            <tr>
+                <td>{{ unU.username }}</td>
+                <td>{{ unU.nom }}</td>
+                <td>{{ unU.prenom }}</td>
+                <td>{{ unU.DDN|date('d/m/Y', "Europe/Paris") }}</td>
+                <td>{{ unU.tel }}</td>
+                <td>{{ unU.email }}</td>
+                <td>{{ unU.poste }}</td>
+                <td>{{ unU.lastLogin|date('d/m/Y H:i:s', "Europe/Paris") }}</td>
+                {% if unU.enabled == 1 %}
+                    <td>
+                        <a href="/ng/immobilier/user/activer/{{ unU.id }}" class="btn btn-success">Activé</a>
+                        <a href="/ng/immobilier/user/bloquer/{{ unU.id }}" class="btn btn-outline-danger">Bloqué</a>
+                    </td>
+                {% else %}
+                    <td>
+                        <a href="/ng/immobilier/user/activer/{{ unU.id }}" class="btn btn-outline-success">Activé</a>
+                        <a href="/ng/immobilier/user/bloquer/{{ unU.id }}" class="btn btn-danger">Bloqué</a>
+                    </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table><br/>
+
+    <a href="/register/" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+ng_administrateur_login:
+    path:     /
+    defaults: { _controller: NGAdministrateurBundle:Default:index }
+
+ng_administrateur_homepage:
+    path:     /ng/
+    defaults: { _controller: NGAdministrateurBundle:Default:home }
+
+ng_administrateur_user-index:
+    path:     /ng/immobilier/user
+    defaults: { _controller: NGAdministrateurBundle:Utilisateur:index }
+
+ng_administrateur_user-blocked:
+    path:     /ng/immobilier/user/bloquer/{id}
+    defaults: { _controller: NGAdministrateurBundle:Utilisateur:block }
+
+ng_administrateur_user-actived:
+    path:     /ng/immobilier/user/activer/{id}
+    defaults: { _controller: NGAdministrateurBundle:Utilisateur:activ }
+
+ng_administrateur_partner-index:
+    path:     /ng/immobilier/partenaire
+    defaults: { _controller: NGAdministrateurBundle:Partenaire:index }
+
+
+ng_administrateur_partner-add:
+    path:     /ng/immobilier/partenaire/ajout
+    defaults: { _controller: NGAdministrateurBundle:Partenaire:add }

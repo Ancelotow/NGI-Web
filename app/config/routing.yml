@@ -1,0 +1,19 @@
+ng_comptable:
+    resource: "@NGComptableBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ng_gestionnaire:
+    resource: "@NGGestionnaireBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ng_administrateur:
+    resource: "@NGAdministrateurBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+

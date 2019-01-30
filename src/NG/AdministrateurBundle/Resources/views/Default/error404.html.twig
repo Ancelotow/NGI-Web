@@ -1,0 +1,14 @@
+{% extends':administrateur:base.html.twig' %}
+
+{% block title %}Erreur 404{% endblock %}
+
+{% block navbar %}{{ 'erreur 404'|upper }}{% endblock %}
+
+{% block body %}
+
+    <center>
+        <h4>Erreur 404 : Page non trouvé</h4><br/>
+        <a href="/ng/" class="btn btn-outline-ngi">{{ "retour à l'accueil"|upper }}</a>
+    </center>
+
+{% endblock %}

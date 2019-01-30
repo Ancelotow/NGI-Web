@@ -1,0 +1,51 @@
+ng_gestionnaire_geolocalisation-region-index:
+    path:     /ng/geolocalisation/region
+    defaults: { _controller: NGGestionnaireBundle:Region:index }
+
+ng_gestionnaire_geolocalisation-region-add:
+    path:     /ng/geolocalisation/region/ajout
+    defaults: { _controller: NGGestionnaireBundle:Region:add }
+
+ng_gestionnaire_geolocalisation-dept-index:
+    path:     /ng/geolocalisation/departement
+    defaults: { _controller: NGGestionnaireBundle:Departement:index }
+
+
+ng_gestionnaire_geolocalisation-dept-add:
+    path:     /ng/geolocalisation/departement/ajout
+    defaults: { _controller: NGGestionnaireBundle:Departement:add }
+
+
+ng_gestionnaire_geolocalisation-ville-index:
+    path:     /ng/geolocalisation/ville
+    defaults: { _controller: NGGestionnaireBundle:Ville:index }
+
+
+ng_gestionnaire_geolocalisation-ville-add:
+    path:     /ng/geolocalisation/ville/ajout
+    defaults: { _controller: NGGestionnaireBundle:Ville:add }
+
+
+ng_gestionnaire_immeuble-index:
+    path:     /ng/gestion/immeuble
+    defaults: { _controller: NGGestionnaireBundle:Immeuble:index }
+
+
+ng_gestionnaire_immeuble-add:
+    path:     /ng/gestion/immeuble/ajout
+    defaults: { _controller: NGGestionnaireBundle:Immeuble:add }
+
+
+ng_gestionnaire_proprietaire-index:
+    path:     /ng/gestion/proprietaire
+    defaults: { _controller: NGGestionnaireBundle:Proprietaire:index }
+
+
+ng_gestionnaire_proprietaire-add:
+    path:     /ng/gestion/proprietaire/ajout
+    defaults: { _controller: NGGestionnaireBundle:Proprietaire:add }
+
+
+ng_gestionnaire_immeuble:
+    path:     /ng/gestion/immeuble/code/{code}
+    defaults: { _controller: NGGestionnaireBundle:Immeuble:uneCopro }

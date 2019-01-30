@@ -1,0 +1,38 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Partenaires{% endblock %}
+
+{% block body %}
+
+    <h4>Liste des Partenaires</h4><br/>
+
+    <table class="table table-hover table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Logo</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Type</th>
+            <th scope="col">Téléphone</th>
+            <th scope="col">Adresse mail</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">Ville</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for unE in ents %}
+            <tr>
+                <td><img alt="logo_ent" src="{{ asset('image/partenaires_logo/' ~ unE.logo) }}" class="img-fluid img-thumbnail" width="50" height="50" /></td>
+                <td>{{ unE.nom }}</td>
+                <td>{{ unE.type }}</td>
+                <td>{{ unE.tel }}</td>
+                <td>{{ unE.email }}</td>
+                <td>{{ unE.adresse }}</td>
+                <td>{{ unE.ville.nom }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table><br/>
+
+    <a href="/ng/immobilier/partenaire/ajout" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+
+{% endblock %}
