@@ -56,6 +56,21 @@ class Lot
      */
     private $prix;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="NG\GestionnaireBundle\Entity\Proprietaire")
+     */
+    private $proprietaire;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="NG\GestionnaireBundle\Entity\Copropriete")
+     */
+    private $copro;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="NG\AdministrateurBundle\Entity\TypeLot")
+     */
+    private $typeLot;
+
 
     /**
      * Get id
@@ -162,5 +177,100 @@ class Lot
     {
         return $this->carezze;
     }
-}
 
+    /**
+     * Set prix
+     *
+     * @param float $prix
+     *
+     * @return Lot
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    /**
+     * Get prix
+     *
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * Set proprietaire
+     *
+     * @param \NG\GestionnaireBundle\Entity\Proprietaire $proprietaire
+     *
+     * @return Lot
+     */
+    public function setProprietaire(\NG\GestionnaireBundle\Entity\Proprietaire $proprietaire = null)
+    {
+        $this->proprietaire = $proprietaire;
+
+        return $this;
+    }
+
+    /**
+     * Get proprietaire
+     *
+     * @return \NG\GestionnaireBundle\Entity\Proprietaire
+     */
+    public function getProprietaire()
+    {
+        return $this->proprietaire;
+    }
+
+    /**
+     * Set typeLot
+     *
+     * @param \NG\AdministrateurBundle\Entity\TypeLot $typeLot
+     *
+     * @return Lot
+     */
+    public function setTypeLot(\NG\AdministrateurBundle\Entity\TypeLot $typeLot = null)
+    {
+        $this->typeLot = $typeLot;
+
+        return $this;
+    }
+
+    /**
+     * Get typeLot
+     *
+     * @return \NG\AdministrateurBundle\Entity\TypeLot
+     */
+    public function getTypeLot()
+    {
+        return $this->typeLot;
+    }
+
+    /**
+     * Set copro
+     *
+     * @param \NG\GestionnaireBundle\Entity\Copropriete $copro
+     *
+     * @return Lot
+     */
+    public function setCopro(\NG\GestionnaireBundle\Entity\Copropriete $copro = null)
+    {
+        $this->copro = $copro;
+
+        return $this;
+    }
+
+    /**
+     * Get copro
+     *
+     * @return \NG\GestionnaireBundle\Entity\Copropriete
+     */
+    public function getCopro()
+    {
+        return $this->copro;
+    }
+}

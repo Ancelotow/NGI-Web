@@ -245,4 +245,12 @@ class Proprietaire
     {
         return $this->sexe;
     }
+
+    /**
+     * @return string
+     */
+    public function getIdentite(){
+        return $this->nom." ".$this->prenom;
+    }
+
 }

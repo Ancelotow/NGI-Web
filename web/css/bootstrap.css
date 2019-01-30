@@ -1550,6 +1550,13 @@ pre code {
   background-color: transparent;
 }
 
+.table-copro {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  font-size: 30%;
+}
+
 .table th,
 .table td {
   padding: 0.75rem;

@@ -6,7 +6,14 @@
     <div class="container">
         <center>
 
+
             <h4>Ajouter une Copropriété</h4><br/>
+
+            {% if error == true %}
+                <div class="alert alert-danger">
+                    Cette copropriété ou/et ce code de copropriété existe déjà.
+                </div><br/>
+            {% endif %}
 
             {{ form_start(form, {'method' : 'POST'}) }}
 

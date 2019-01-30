@@ -63,7 +63,7 @@
 
                     </div></div>
                 <div class="col-6 col-sm-4">
-                    <h4>Propriétaire</h4>
+                    <h4>Propriétaires</h4>
                     <div class="table-wrapper-scroll-y">
                         <table class="table table-hover table-dark">
                             <thead>
@@ -120,54 +120,37 @@
                     <div class="table-wrapper-scroll-y">
                         <table class="table table-hover table-dark">
                             <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col">Numéro</th>
+                                    <th scope="col">{{ "étage"|upper }}</th>
+                                    <th scope="col">Surface</th>
+                                    <th scope="col">Carezze</th>
+                                    <th scope="col">Prix</th>
+                                    <th scope="col">Propriétaire</th>
+                                    <th scope="col">Type</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                                {% for unL in lots %}
+                                    <tr>
+                                        <td>{{ unL.num }}</td>
+                                        <td>{{ unL.etage }}</td>
+                                        <td>{{ unL.surface }}</td>
+                                        <td>{{ unL.carezze }}</td>
+                                        <td>{{ unL.prix }} €</td>
+                                        <td>{{ unL.proprietaire.nom }}</td>
+                                        <td>{{ unL.typeLot.nom }}</td>
+                                    </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
-
-                    </div></div>
+                    </div><br/>
+                    {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+                        <a href="/ng/gestion/immeuble/ajout/lot/{{ copro.code }}" class="btn btn-outline-ngi">
+                            Ajouter
+                        </a><br/>
+                    {% endif %}
+                </div>
             </div><br/>
             <div class="row">
                 <div class="col-6 col-sm-4">

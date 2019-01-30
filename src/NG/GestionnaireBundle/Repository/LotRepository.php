@@ -10,4 +10,29 @@ namespace NG\GestionnaireBundle\Repository;
  */
 class LotRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function allLot()
+    {
+        $qb =$this->_em->createQueryBuilder();
+        $qb->select('l')
+            ->from('NGGestionnaireBundle:Lot', 'l')
+            ->orderBy('l.num');
+        $query = $qb->getQuery();
+        $resultat = $query->getResult();
+        return $resultat;
+    }
+
+    public function unLot($num)
+    {
+        $qb =$this->_em->createQueryBuilder();
+        $qb->select('l')
+            ->from('NGGestionnaireBundle:Lot', 'l')
+            ->where('l.num = :num')
+            ->setParameter('num', $num);
+        $query = $qb->getQuery();
+        $resultat = $query->getOneOrNullResult();
+        return $resultat;
+    }
+
+
 }

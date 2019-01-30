@@ -26,6 +26,12 @@ class ImmeubleController extends Controller
         $form   = $this->createForm(CoproprieteType::class, $cop);
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $resp = $this->verif($cop->getCode());
+            if($resp == false){
+                return $this->render('NGGestionnaireBundle:immeuble:add.html.twig', array(
+                    'form' => $form->createView(), 'error' => true
+                ));
+            }
             $file = $cop->getImage();
             $filename = $this->generateUniqueFileName().'.'.$file->guessExtension();
             $file->move(
@@ -43,7 +49,7 @@ class ImmeubleController extends Controller
         }
 
         return $this->render('NGGestionnaireBundle:immeuble:add.html.twig', array(
-            'form' => $form->createView(),
+            'form' => $form->createView(), 'error'=> false
         ));
     }
 
@@ -56,10 +62,27 @@ class ImmeubleController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $copro = $em->getRepository("NGGestionnaireBundle:Copropriete")->uneCopro($code);
+        $em = $this->getDoctrine()->getManager();
+        $lots = $em->getRepository("NGGestionnaireBundle:Lot")->allLot();
         if($copro == null){
             return $this->render("NGAdministrateurBundle:Default:errorCopro.html.twig");
         }
-        return $this->render('NGGestionnaireBundle:immeuble:copro.html.twig', array("copro"=>$copro));
+        return $this->render('NGGestionnaireBundle:immeuble:copro.html.twig', array(
+            "copro"=>$copro,
+            "lots"=>$lots
+        ));
+    }
+
+    public function verif($code)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $copro = $em->getRepository("NGGestionnaireBundle:Copropriete")->uneCopro($code);
+        if($copro == null){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 }

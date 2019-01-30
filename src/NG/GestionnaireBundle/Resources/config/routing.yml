@@ -49,3 +49,8 @@ ng_gestionnaire_proprietaire-add:
 ng_gestionnaire_immeuble:
     path:     /ng/gestion/immeuble/code/{code}
     defaults: { _controller: NGGestionnaireBundle:Immeuble:uneCopro }
+
+
+ng_gestionnaire_immeuble-lot-add:
+    path:     /ng/gestion/immeuble/ajout/lot/{code}
+    defaults: { _controller: NGGestionnaireBundle:Lot:add }
