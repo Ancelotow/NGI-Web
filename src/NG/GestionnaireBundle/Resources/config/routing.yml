@@ -26,6 +26,11 @@ ng_gestionnaire_geolocalisation-ville-add:
     defaults: { _controller: NGGestionnaireBundle:Ville:add }
 
 
+ng_gestionnaire_geolocalisation-carte:
+    path:     /ng/geolocalisation/carte
+    defaults: { _controller: NGGestionnaireBundle:Immeuble:map }
+
+
 ng_gestionnaire_immeuble-index:
     path:     /ng/gestion/immeuble
     defaults: { _controller: NGGestionnaireBundle:Immeuble:index }

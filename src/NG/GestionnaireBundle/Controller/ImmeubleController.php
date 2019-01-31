@@ -16,6 +16,13 @@ class ImmeubleController extends Controller
         return $this->render('NGGestionnaireBundle:immeuble:index.html.twig', array("immeubles"=>$copros));
     }
 
+    public function mapAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $copros = $em->getRepository("NGGestionnaireBundle:Copropriete")->allCopro();
+        return $this->render('NGGestionnaireBundle:geolocalisation:carte.html.twig', array("immeubles"=>$copros));
+    }
+
     public function addAction(Request $request){
 
         if(!$this->isGranted('ROLE_ADMIN', 'ROLE_GESTIONNAIRE')){
