@@ -65,56 +65,40 @@
                 <div class="col-6 col-sm-4">
                     <h4>Propriétaires</h4>
                     <div class="table-wrapper-scroll-y">
-                        <table class="table table-hover table-dark">
+                        <table class="table-copro table-hover table-dark">
                             <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <tr>
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">Prénom</th>
+                                    <th scope="col">Téléphone</th>
+                                    <th scope="col">Adresse mail</th>
+                                    <th scope="col">Adresse</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                                {% for unP in props %}
+                                    <tr>
+                                        {% if unP.proprietaire.sexe == 0 %}
+                                            <td>Mme. {{ unP.proprietaire.nom }}</td>
+                                        {% else %}
+                                            <td>M. {{ unP.proprietaire.nom }}</td>
+                                        {% endif %}
+                                        <td>{{ unP.proprietaire.prenom }}</td>
+                                        <td>{{ unP.proprietaire.tel }}</td>
+                                        <td>{{ unP.proprietaire.email }}</td>
+                                        <td>{{ unP.proprietaire.adresse }}, {{ unP.proprietaire.ville.cp }} {{ unP.proprietaire.ville.nom }}</td>
+                                    </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
 
-                    </div></div>
+                    </div><br/>
+                    {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+                        <a href="#" class="btn btn-outline-ngi">
+                            Ajouter
+                        </a><br/>
+                    {% endif %}
+                </div>
                 <div class="col-6 col-sm-4">
                     <h4>Lots</h4>
                     <div class="table-wrapper-scroll-y">
