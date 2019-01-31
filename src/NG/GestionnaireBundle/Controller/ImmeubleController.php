@@ -63,7 +63,7 @@ class ImmeubleController extends Controller
         $em = $this->getDoctrine()->getManager();
         $copro = $em->getRepository("NGGestionnaireBundle:Copropriete")->uneCopro($code);
         $em = $this->getDoctrine()->getManager();
-        $lots = $em->getRepository("NGGestionnaireBundle:Lot")->allLot();
+        $lots = $em->getRepository("NGGestionnaireBundle:Lot")->lotCopro($copro->getId());
         if($copro == null){
             return $this->render("NGAdministrateurBundle:Default:errorCopro.html.twig");
         }

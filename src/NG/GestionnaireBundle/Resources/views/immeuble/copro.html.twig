@@ -118,11 +118,11 @@
                 <div class="col-6 col-sm-4">
                     <h4>Lots</h4>
                     <div class="table-wrapper-scroll-y">
-                        <table class="table table-hover table-dark">
+                        <table class="table-copro table-hover table-dark">
                             <thead>
                                 <tr>
                                     <th scope="col">Numéro</th>
-                                    <th scope="col">{{ "étage"|upper }}</th>
+                                    <th scope="col">{{ "é"|upper }}tage</th>
                                     <th scope="col">Surface</th>
                                     <th scope="col">Carezze</th>
                                     <th scope="col">Prix</th>
@@ -135,10 +135,14 @@
                                     <tr>
                                         <td>{{ unL.num }}</td>
                                         <td>{{ unL.etage }}</td>
-                                        <td>{{ unL.surface }}</td>
-                                        <td>{{ unL.carezze }}</td>
+                                        <td>{{ unL.surface }} m²</td>
+                                        <td>{{ unL.carezze }} m²</td>
                                         <td>{{ unL.prix }} €</td>
-                                        <td>{{ unL.proprietaire.nom }}</td>
+                                        {% if unL.proprietaire.sexe == 0 %}
+                                            <td>Mme. {{ unL.proprietaire.nom }}</td>
+                                        {% else %}
+                                            <td>M. {{ unL.proprietaire.nom }}</td>
+                                        {% endif %}
                                         <td>{{ unL.typeLot.nom }}</td>
                                     </tr>
                                 {% endfor %}

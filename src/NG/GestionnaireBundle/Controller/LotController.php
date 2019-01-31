@@ -28,7 +28,7 @@ class LotController extends Controller
         $form   = $this->createForm(LotType::class, $lot);
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
-            $resp = $this->verif($lot->getNum());
+            $resp = $this->verif($lot->getNum(), $copro->getId());
             if($resp == false){
                 return $this->render('NGGestionnaireBundle:immeuble:lot-add.html.twig', array(
                     'form' => $form->createView(), 'error' => true
@@ -49,10 +49,10 @@ class LotController extends Controller
         ));
     }
 
-    public function verif($num)
+    public function verif($num, $code)
     {
         $em = $this->getDoctrine()->getManager();
-        $lot = $em->getRepository("NGGestionnaireBundle:Lot")->unLot($num);
+        $lot = $em->getRepository("NGGestionnaireBundle:Lot")->unLot($num, $code);
         if($lot == null){
             return true;
         }

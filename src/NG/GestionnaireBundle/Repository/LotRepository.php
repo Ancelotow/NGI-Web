@@ -22,15 +22,29 @@ class LotRepository extends \Doctrine\ORM\EntityRepository
         return $resultat;
     }
 
-    public function unLot($num)
+    public function unLot($num, $copro)
     {
         $qb =$this->_em->createQueryBuilder();
         $qb->select('l')
             ->from('NGGestionnaireBundle:Lot', 'l')
             ->where('l.num = :num')
+            ->andWhere('l.copro = :copro')
+            ->setParameter('copro', $copro)
             ->setParameter('num', $num);
         $query = $qb->getQuery();
         $resultat = $query->getOneOrNullResult();
+        return $resultat;
+    }
+
+    public function lotCopro($copro)
+    {
+        $qb =$this->_em->createQueryBuilder();
+        $qb->select('l')
+            ->from('NGGestionnaireBundle:Lot', 'l')
+            ->where('l.copro = :copro')
+            ->setParameter('copro', $copro);
+        $query = $qb->getQuery();
+        $resultat = $query->getResult();
         return $resultat;
     }
 

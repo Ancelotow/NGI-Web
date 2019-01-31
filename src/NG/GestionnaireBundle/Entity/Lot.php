@@ -29,9 +29,9 @@ class Lot
     private $num;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="etage", type="integer")
+     * @ORM\Column(name="etage", type="string")
      */
     private $etage;
 
