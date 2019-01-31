@@ -1,26 +1,24 @@
-Symfony Standard Edition
+NGI-Web
 ========================
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+Ceci est une application destinner a l'entreprise de syndic de copropriétés NG-Immobilier. 
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
-
-What's inside?
+Quels sont les pré-requis ?
 --------------
 
-The Symfony Standard Edition is configured with the following defaults:
+Cette application web nécessite un serveur  avec : 
 
-  * An AppBundle you can use to start coding;
+  * Windows 10
+  
+  * Un navigateur web
 
-  * Twig as the only configured template engine;
+  * Une connexion internet (optimal de préférence)
 
-  * Doctrine ORM/DBAL;
+  * Une base de données MySQL
 
-  * Swiftmailer;
+  * Le langage de programmation PHP 7.1 ou 7.2
 
-  * Annotations enabled for everything.
+  * Le logiciel Composer
 
 It comes pre-configured with the following bundles:
 
