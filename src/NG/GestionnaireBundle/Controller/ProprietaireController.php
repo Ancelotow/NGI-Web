@@ -5,6 +5,8 @@ namespace NG\GestionnaireBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use NG\GestionnaireBundle\Entity\Proprietaire;
 use NG\GestionnaireBundle\Form\ProprietaireType;
+use NG\GestionnaireBundle\Entity\Lot;
+use NG\AdministrateurBundle\Entity\TypeLot;
 use Symfony\Component\HttpFoundation\Request;
 
 class ProprietaireController extends Controller
@@ -60,6 +62,23 @@ class ProprietaireController extends Controller
         $form   = $this->createForm(ProprietaireType::class, $prop);
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $lot = new Lot();
+            $em = $this->getDoctrine()->getManager();
+            $tl = $em->getRepository("NGAdministrateurBundle:TypeLot")->findOneBy(array('id'=>$_POST['type_lot']));
+            $lot->setNum($_POST['num']);
+            $resp = $this->verifLot($lot->getNum(), $copro->getId());
+            if($resp == false){
+                return $this->render('NGGestionnaireBundle:immeuble:prop_lot-add.html.twig', array(
+                    'form' => $form->createView(), 'error' => true
+                ));
+            }
+            $lot->setEtage($_POST['etage']);
+            $lot->setSurface($_POST['surface']);
+            $lot->setCarezze($_POST['carezze']);
+            $lot->setPrix($_POST['prix']);
+            $lot->setTypeLot($tl);
+            $lot->setCopro($copro);
+            $lot->setProprietaire($prop);
             $nom = strtoupper($form->get('nom')->getData());
             $prenom = ucfirst($form->get('prenom')->getData());
             $prop->setNom($nom);
@@ -67,14 +86,17 @@ class ProprietaireController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($prop);
             $em->flush();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($lot);
+            $em->flush();
 
             $request->getSession()->getFlashBag()->add('notice', 'Propriétaire bien enregistré');
 
-            return $this->redirect('/ng/gestion/proprietaire');
+            return $this->redirect('/ng/gestion/immeuble/code/'.$code);
         }
 
-        return $this->render('NGGestionnaireBundle:proprietaire:add.html.twig', array(
-            'form' => $form->createView(),
+        return $this->render('NGGestionnaireBundle:immeuble:prop_lot-add.html.twig', array(
+            'form' => $form->createView(), 'error'=> false,
         ));
     }
 

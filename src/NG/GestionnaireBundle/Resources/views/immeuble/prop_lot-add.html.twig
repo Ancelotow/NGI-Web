@@ -1,0 +1,110 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Propriétaire/Lot{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+            <h4>Ajouter un Propriétaire/Lot</h4><br/>
+
+            {% if error == true %}
+                <div class="alert alert-danger">
+                    Ce lot ou/et ce numéro de lot existe déjà.
+                </div><br/>
+            {% endif %}
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.sexe) }}
+                    {{ form_widget(form.sexe, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.nom) }}
+                    {{ form_widget(form.nom, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.prenom) }}
+                    {{ form_widget(form.prenom, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.tel) }}
+                    {{ form_widget(form.tel, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.email) }}
+                    {{ form_widget(form.email, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.adresse) }}
+                    {{ form_widget(form.adresse, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.ville) }}
+                    {{ form_widget(form.ville, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Numéro du Lot</label>
+                    <input type="text" name="num" step="1" min="0" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Etage</label>
+                    <input type="text" name="etage" class="form-control" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Surface (en m²)</label>
+                    <input type="number" name="surface" step="0.001" min="0" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Surface carezze (en m²)</label>
+                    <input type="number" name="carezze" step="0.001" min="0" class="form-control" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Prix (en €)</label>
+                    <input type="number" name="prix" step="0.01" min="0" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Type du Lot</label>
+                    <select name="type_lot" class="form-control">
+                        <option value="2">Boutique</option>
+                        <option value="3">Bureau</option>
+                        <option value="5">Cave</option>
+                        <option value="1">Logement</option>
+                        <option value="4">Parking</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}
