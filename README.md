@@ -1,7 +1,7 @@
 NGI-Web
 ========================
 
-Ceci est une application destinner a l'entreprise de syndic de copropriétés NG-Immobilier. 
+Ceci est une application destinner a l'entreprise de syndic de copropriétés **NG-Immobilier**. 
 
 Quels sont les pré-requis ?
 --------------
@@ -12,56 +12,45 @@ Cette application web nécessite un serveur  avec :
   
   * Un navigateur web
 
-  * Une connexion internet (optimal de préférence)
+  * Une connexion internet
 
-  * Une base de données MySQL
+  * Une base de données **MySQL**
 
-  * Le langage de programmation PHP 7.1 ou 7.2
+  * Le langage de programmation **PHP 7.1** ou **7.2**
 
-  * Le logiciel Composer
+  * Le logiciel **Composer**
+  
+Quels sont ces fonctionnalités ?
+--------------
 
-It comes pre-configured with the following bundles:
+Ce logiciel permet de :
+    
+   * Gérer les **Régions**, **Départements** et **Villes**
+   
+   * Gérer les **immeubles** de copropriété
+   
+   * Gérer les **lots** de copropriétés
+   
+   * Gérer les **habitants** et/ou **propriétaires** d'un lot 
+   
+   * Gérer les **Sinistre**
+   
+   * Gérer les **AG** et les **CS**
+   
+   * Gérer les **appels de fond**
+   
+   * Gérer les **appels travaux**
+   
+   * Gérer le **budget** de l'entreprise
+   
+   * De visualiser leurs immeuble sur une carte **Google Map**
+   
+Le ou la gérante de l'entreprise peut aussi gérer les employés de son entreprise.
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+Ce logiciel gère aussi les droits d'accès à certaines rubriques de l'application en fonction de votre poste au sein de l'entreprise.
+   
+   
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
-
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
-
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
-
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
-
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
-
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.2/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.2/doctrine.html
-[8]:  https://symfony.com/doc/3.2/templating.html
-[9]:  https://symfony.com/doc/3.2/security.html
-[10]: https://symfony.com/doc/3.2/email.html
-[11]: https://symfony.com/doc/3.2/logging.html
-[12]: https://symfony.com/doc/3.2/assetic/asset_management.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
+   
+   
+   
