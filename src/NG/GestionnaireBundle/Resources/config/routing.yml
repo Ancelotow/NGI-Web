@@ -64,3 +64,8 @@ ng_gestionnaire_immeuble-lot-add:
 ng_gestionnaire_immeuble-lot-prop-add:
     path:     /ng/gestion/immeuble/ajout/lot/proprietaire/{code}
     defaults: { _controller: NGGestionnaireBundle:Proprietaire:prop_lotAdd }
+
+
+ng_gestionnaire_immeuble-habitant-add:
+    path:     /ng/gestion/immeuble/ajout/habitant/{code}
+    defaults: { _controller: NGGestionnaireBundle:Habitant:add }

@@ -73,6 +73,8 @@ class ImmeubleController extends Controller
         $lots = $em->getRepository("NGGestionnaireBundle:Lot")->lotCopro($copro->getId());
         $em = $this->getDoctrine()->getManager();
         $props = $em->getRepository("NGGestionnaireBundle:Lot")->propsLot($copro->getId());
+        $em = $this->getDoctrine()->getManager();
+        $habs = $em->getRepository("NGGestionnaireBundle:Habitant")->lesHabs($copro->getId());
         if($copro == null){
             return $this->render("NGAdministrateurBundle:Default:errorCopro.html.twig");
         }
@@ -80,6 +82,7 @@ class ImmeubleController extends Controller
             "copro"=>$copro,
             "lots"=>$lots,
             "props"=>$props,
+            "habs"=>$habs,
         ));
     }
 

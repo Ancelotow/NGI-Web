@@ -1,0 +1,85 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Habitant{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+
+            <h4>Ajouter un Habitant</h4><br/>
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.sexe) }}
+                    {{ form_widget(form.sexe, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.nom) }}
+                    {{ form_widget(form.nom, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    {{ form_label(form.prenom) }}
+                    {{ form_widget(form.prenom, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.tel) }}
+                    {{ form_widget(form.tel, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.email) }}
+                    {{ form_widget(form.email, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Date d'emménagement</label>
+                    <input type="date" class="form-control" name="dateE" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.lot) }}
+                    {{ form_widget(form.lot, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Membre du CS</label><br/>
+                    <input type="radio" name="cs" value="0" onclick="cocherCS()" checked />Non&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cs" id="mcs" value="1"/>Oui
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Président du CS</label><br/>
+                    <input type="radio" name="pcs" value="0" id="pcs2" checked />Non&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="pcs" id="pcs" value="1" onclick="cocherPCS()" />Oui
+                </div>
+            </div>
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+            <script>
+                function cocherPCS(){
+                    document.getElementById('mcs').checked = true;
+                }
+
+                function cocherCS(){
+                    document.getElementById('pcs2').checked = true;
+                }
+            </script>
+
+        </center>
+    </div>
+{% endblock %}
