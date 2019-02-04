@@ -1,0 +1,12 @@
+9389a8,127.0.0.1,GET,http://localhost:8000/register/,1549269538,,302
+cba3e7,127.0.0.1,GET,http://localhost:8000/login,1549269539,,200
+33531f,127.0.0.1,POST,http://localhost:8000/login_check,1549269548,,302
+41190d,127.0.0.1,GET,http://localhost:8000/ng/,1549269549,,200
+ce0e9f,127.0.0.1,GET,http://localhost:8000/ng/immobilier/user,1549269555,,200
+08feb8,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble,1549269563,,200
+8d7137,127.0.0.1,GET,http://localhost:8000/ng/gestion/proprietaire,1549269567,,200
+c978d8,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble,1549269583,,200
+47e048,127.0.0.1,GET,http://localhost:8000/ng/geolocalisation/carte,1549269903,,200
+d40ae4,127.0.0.1,GET,http://localhost:8000/ng/geolocalisation/carte,1549270108,,200
+1a548e,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble,1549270115,,200
+fa6884,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble,1549270132,,200
