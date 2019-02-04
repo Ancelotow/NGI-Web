@@ -22,90 +22,75 @@ class __TwigTemplate_b28db4c57607c23fff551010c3e5e5d9d0379e9704878dd73f8b45f3d1f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f73b365ae20b783a86d98b44c5c44c488f3ef30372b81ceb6b42f090605c4f86 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f73b365ae20b783a86d98b44c5c44c488f3ef30372b81ceb6b42f090605c4f86->enter($__internal_f73b365ae20b783a86d98b44c5c44c488f3ef30372b81ceb6b42f090605c4f86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:geolocalisation:carte.html.twig"));
+        $__internal_0b366e05f78f0cfee3a914839ac0ba8209d43afa5f51180bcb807db051fd6d05 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0b366e05f78f0cfee3a914839ac0ba8209d43afa5f51180bcb807db051fd6d05->enter($__internal_0b366e05f78f0cfee3a914839ac0ba8209d43afa5f51180bcb807db051fd6d05_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:geolocalisation:carte.html.twig"));
 
-        $__internal_72e06620de0a617ac3cbb47876075899974e2c4a3121e7b818293a9b1012057a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_72e06620de0a617ac3cbb47876075899974e2c4a3121e7b818293a9b1012057a->enter($__internal_72e06620de0a617ac3cbb47876075899974e2c4a3121e7b818293a9b1012057a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:geolocalisation:carte.html.twig"));
+        $__internal_806938c7ee5f0e5e514461be3f7f6780327c274f7b1466d4b7f19b8439d79aec = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_806938c7ee5f0e5e514461be3f7f6780327c274f7b1466d4b7f19b8439d79aec->enter($__internal_806938c7ee5f0e5e514461be3f7f6780327c274f7b1466d4b7f19b8439d79aec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:geolocalisation:carte.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f73b365ae20b783a86d98b44c5c44c488f3ef30372b81ceb6b42f090605c4f86->leave($__internal_f73b365ae20b783a86d98b44c5c44c488f3ef30372b81ceb6b42f090605c4f86_prof);
+        $__internal_0b366e05f78f0cfee3a914839ac0ba8209d43afa5f51180bcb807db051fd6d05->leave($__internal_0b366e05f78f0cfee3a914839ac0ba8209d43afa5f51180bcb807db051fd6d05_prof);
 
         
-        $__internal_72e06620de0a617ac3cbb47876075899974e2c4a3121e7b818293a9b1012057a->leave($__internal_72e06620de0a617ac3cbb47876075899974e2c4a3121e7b818293a9b1012057a_prof);
+        $__internal_806938c7ee5f0e5e514461be3f7f6780327c274f7b1466d4b7f19b8439d79aec->leave($__internal_806938c7ee5f0e5e514461be3f7f6780327c274f7b1466d4b7f19b8439d79aec_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_0c55d72f69c6bb3233af6d86f0fd85571ccf5a19e65f657d1af162f5f097e897 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0c55d72f69c6bb3233af6d86f0fd85571ccf5a19e65f657d1af162f5f097e897->enter($__internal_0c55d72f69c6bb3233af6d86f0fd85571ccf5a19e65f657d1af162f5f097e897_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_f6334e978cc404ec2fd64b7044d66325dbc5b2f4d0238444abd10f173d071f6b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f6334e978cc404ec2fd64b7044d66325dbc5b2f4d0238444abd10f173d071f6b->enter($__internal_f6334e978cc404ec2fd64b7044d66325dbc5b2f4d0238444abd10f173d071f6b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_2420f98e10a4983ce975ec2a5419b4730b926e05f6ac9e50b55020c080d2913c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2420f98e10a4983ce975ec2a5419b4730b926e05f6ac9e50b55020c080d2913c->enter($__internal_2420f98e10a4983ce975ec2a5419b4730b926e05f6ac9e50b55020c080d2913c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_962ab326362d32a54a01336fe024814cbfdf086f821871a73ece08902bd99cef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_962ab326362d32a54a01336fe024814cbfdf086f821871a73ece08902bd99cef->enter($__internal_962ab326362d32a54a01336fe024814cbfdf086f821871a73ece08902bd99cef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Carte";
         
-        $__internal_2420f98e10a4983ce975ec2a5419b4730b926e05f6ac9e50b55020c080d2913c->leave($__internal_2420f98e10a4983ce975ec2a5419b4730b926e05f6ac9e50b55020c080d2913c_prof);
+        $__internal_962ab326362d32a54a01336fe024814cbfdf086f821871a73ece08902bd99cef->leave($__internal_962ab326362d32a54a01336fe024814cbfdf086f821871a73ece08902bd99cef_prof);
 
         
-        $__internal_0c55d72f69c6bb3233af6d86f0fd85571ccf5a19e65f657d1af162f5f097e897->leave($__internal_0c55d72f69c6bb3233af6d86f0fd85571ccf5a19e65f657d1af162f5f097e897_prof);
+        $__internal_f6334e978cc404ec2fd64b7044d66325dbc5b2f4d0238444abd10f173d071f6b->leave($__internal_f6334e978cc404ec2fd64b7044d66325dbc5b2f4d0238444abd10f173d071f6b_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_5a591b4b3333006747cd090df5b638ff322dae21659e8ea9904778be682e18b0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5a591b4b3333006747cd090df5b638ff322dae21659e8ea9904778be682e18b0->enter($__internal_5a591b4b3333006747cd090df5b638ff322dae21659e8ea9904778be682e18b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f36ab1ea9c1258a8be86bc9a0b107c7c92876dab4d72c022042e9e453343ca4a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f36ab1ea9c1258a8be86bc9a0b107c7c92876dab4d72c022042e9e453343ca4a->enter($__internal_f36ab1ea9c1258a8be86bc9a0b107c7c92876dab4d72c022042e9e453343ca4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_6ae75c23493995966772f952efcf78fc6150aa99ba9d25e763e31c68afd6f81b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6ae75c23493995966772f952efcf78fc6150aa99ba9d25e763e31c68afd6f81b->enter($__internal_6ae75c23493995966772f952efcf78fc6150aa99ba9d25e763e31c68afd6f81b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4d364a83cc0ade938f242be7ecc9e67b8c316afa094f7c320e124097404a465c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4d364a83cc0ade938f242be7ecc9e67b8c316afa094f7c320e124097404a465c->enter($__internal_4d364a83cc0ade938f242be7ecc9e67b8c316afa094f7c320e124097404a465c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "
-    <div id=\"googleMap\" style=\"width:100%;height:800px;\"></div>
+
+
+    <div id=\"mapid\"></div>
     <script>
-        function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(48.863051, 2.342763),
-                zoom:12.75,
-            };
-            var map = new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);
-            ";
-        // line 15
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["immeubles"] ?? $this->getContext($context, "immeubles")));
-        foreach ($context['_seq'] as $context["_key"] => $context["unI"]) {
-            // line 16
-            echo "                var ";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["unI"], "code", array()), "html", null, true);
-            echo " = new google.maps.Marker({
-                    position: new google.maps.LatLng(";
-            // line 17
-            echo twig_escape_filter($this->env, $this->getAttribute($context["unI"], "lattitude", array()), "html", null, true);
-            echo ", ";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["unI"], "longitude", array()), "html", null, true);
-            echo "),
-                    map: map
-                });
-            ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['unI'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 21
-        echo "        }
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
     </script>
-    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCtj9bdFee1h3-H2oF_TO5Mvj3PvRFCsCE&callback=myMap\"></script>
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.css\"
+          integrity=\"sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==\"
+          crossorigin=\"\"/>
+    <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"
+            integrity=\"sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==\"
+            crossorigin=\"\"></script>
+
+
+
+
+";
+        // line 42
+        echo "
 ";
         
-        $__internal_6ae75c23493995966772f952efcf78fc6150aa99ba9d25e763e31c68afd6f81b->leave($__internal_6ae75c23493995966772f952efcf78fc6150aa99ba9d25e763e31c68afd6f81b_prof);
+        $__internal_4d364a83cc0ade938f242be7ecc9e67b8c316afa094f7c320e124097404a465c->leave($__internal_4d364a83cc0ade938f242be7ecc9e67b8c316afa094f7c320e124097404a465c_prof);
 
         
-        $__internal_5a591b4b3333006747cd090df5b638ff322dae21659e8ea9904778be682e18b0->leave($__internal_5a591b4b3333006747cd090df5b638ff322dae21659e8ea9904778be682e18b0_prof);
+        $__internal_f36ab1ea9c1258a8be86bc9a0b107c7c92876dab4d72c022042e9e453343ca4a->leave($__internal_f36ab1ea9c1258a8be86bc9a0b107c7c92876dab4d72c022042e9e453343ca4a_prof);
 
     }
 
@@ -121,7 +106,7 @@ class __TwigTemplate_b28db4c57607c23fff551010c3e5e5d9d0379e9704878dd73f8b45f3d1f
 
     public function getDebugInfo()
     {
-        return array (  100 => 21,  88 => 17,  83 => 16,  79 => 15,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  87 => 42,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -140,6 +125,23 @@ class __TwigTemplate_b28db4c57607c23fff551010c3e5e5d9d0379e9704878dd73f8b45f3d1f
 
 {% block body %}
 
+
+
+    <div id=\"mapid\"></div>
+    <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    </script>
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.css\"
+          integrity=\"sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==\"
+          crossorigin=\"\"/>
+    <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"
+            integrity=\"sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==\"
+            crossorigin=\"\"></script>
+
+
+
+
+{#
     <div id=\"googleMap\" style=\"width:100%;height:800px;\"></div>
     <script>
         function myMap() {
@@ -157,6 +159,8 @@ class __TwigTemplate_b28db4c57607c23fff551010c3e5e5d9d0379e9704878dd73f8b45f3d1f
         }
     </script>
     <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCtj9bdFee1h3-H2oF_TO5Mvj3PvRFCsCE&callback=myMap\"></script>
+#}
+
 {% endblock %}", "NGGestionnaireBundle:geolocalisation:carte.html.twig", "C:\\wamp64\\www\\NGI-Web\\src\\NG\\GestionnaireBundle/Resources/views/geolocalisation/carte.html.twig");
     }
 }

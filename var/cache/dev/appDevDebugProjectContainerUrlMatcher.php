@@ -197,6 +197,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                             return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-habitant-add')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\HabitantController::addAction',));
                         }
 
+                        // ng_gestionnaire_immeuble-ag-add
+                        if (0 === strpos($pathinfo, '/ng/gestion/immeuble/ajout/ag') && preg_match('#^/ng/gestion/immeuble/ajout/ag/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-ag-add')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\AGController::addAction',));
+                        }
+
                     }
 
                     // ng_gestionnaire_immeuble

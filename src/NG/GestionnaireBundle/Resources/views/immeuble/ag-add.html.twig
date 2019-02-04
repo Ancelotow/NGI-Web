@@ -1,0 +1,44 @@
+{% extends'base.html.twig' %}
+
+{% block title %}AG{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+
+            <h4>Ajouter une Assemblé Générale</h4><br/>
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.ref) }}
+                    {{ form_widget(form.ref, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.nbDecision) }}
+                    {{ form_widget(form.nbDecision, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Date de l'AG</label>
+                    <input type="date" name="dateAG" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.pdf) }}
+                    {{ form_widget(form.pdf, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}
