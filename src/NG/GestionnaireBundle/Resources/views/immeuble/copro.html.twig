@@ -11,43 +11,52 @@
             <div class="row">
                 <div class="col-6 col-sm-4">
                     <h4>Habitants</h4>
-                    <div class="table-wrapper-scroll-y">
-                        <table class="table-copro table-hover table-dark">
-                            <thead>
-                            <tr>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Prénom</th>
-                                <th scope="col">Date d'emménagment</th>
-                                <th scope="col">Téléphone</th>
-                                <th scope="col">Adresse mail</th>
-                                <th scope="col">Lot</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for unH in habs %}
-                            {% if unH.presidentCS == 1 %}
-                                <tr class="bg-warning" >
-                            {% elseif unH.membreCS == 1 %}
-                                <tr class="bg-primary" >
-                            {% else %}
+                    {% if habs|length > 0 %}
+                        <div class="table-wrapper-scroll-y">
+                            <table class="table-copro table-hover table-dark">
+                                <thead>
                                 <tr>
-                            {% endif %}
-                                    {% if unH.sexe == 0 %}
-                                        <td>Mme. {{ unH.nom }}</td>
-                                    {% else %}
-                                        <td>M. {{ unH.nom }}</td>
-                                    {% endif %}
-                                    <td>{{ unH.prenom }}</td>
-                                    <td>{{ unH.dateEmmenagement }}</td>
-                                    <td>{{ unH.tel }}</td>
-                                    <td>{{ unH.email }}</td>
-                                    <td>{{ unH.lot.num }}</td>
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">Prénom</th>
+                                    <th scope="col">Date d'emménagment</th>
+                                    <th scope="col">Téléphone</th>
+                                    <th scope="col">Adresse mail</th>
+                                    <th scope="col">Lot</th>
                                 </tr>
-                            {% endfor %}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
 
-                    </div><br/>
+                                    {% for unH in habs %}
+                                    {% if unH.presidentCS == 1 %}
+                                        <tr class="bg-warning" >
+                                    {% elseif unH.membreCS == 1 %}
+                                        <tr class="bg-primary" >
+                                    {% else %}
+                                        <tr>
+                                    {% endif %}
+                                            {% if unH.sexe == 0 %}
+                                                <td>Mme. {{ unH.nom }}</td>
+                                            {% else %}
+                                                <td>M. {{ unH.nom }}</td>
+                                            {% endif %}
+                                            <td>{{ unH.prenom }}</td>
+                                            <td>{{ unH.dateEmmenagement }}</td>
+                                            <td>{{ unH.tel }}</td>
+                                            <td>{{ unH.email }}</td>
+                                            <td>{{ unH.lot.num }}</td>
+                                        </tr>
+                                    {% endfor %}
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning">
+                            Il n'y a aucun habitants.
+                        </div>
+                    {% endif %}
+                    <br/>
                     {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
                         <a href="/ng/gestion/immeuble/ajout/habitant/{{ copro.code }}" class="btn btn-outline-ngi">
                             Ajouter
@@ -56,35 +65,42 @@
                 </div>
                 <div class="col-6 col-sm-4">
                     <h4>Propriétaires</h4>
-                    <div class="table-wrapper-scroll-y">
-                        <table class="table-copro table-hover table-dark">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Nom</th>
-                                    <th scope="col">Prénom</th>
-                                    <th scope="col">Téléphone</th>
-                                    <th scope="col">Adresse mail</th>
-                                    <th scope="col">Adresse</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                {% for unP in props %}
+                    {% if props|length > 0 %}
+                        <div class="table-wrapper-scroll-y">
+                            <table class="table-copro table-hover table-dark">
+                                <thead>
                                     <tr>
-                                        {% if unP.proprietaire.sexe == 0 %}
-                                            <td>Mme. {{ unP.proprietaire.nom }}</td>
-                                        {% else %}
-                                            <td>M. {{ unP.proprietaire.nom }}</td>
-                                        {% endif %}
-                                        <td>{{ unP.proprietaire.prenom }}</td>
-                                        <td>{{ unP.proprietaire.tel }}</td>
-                                        <td>{{ unP.proprietaire.email }}</td>
-                                        <td>{{ unP.proprietaire.adresse }}, {{ unP.proprietaire.ville.cp }} {{ unP.proprietaire.ville.nom }}</td>
-                                    </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Prénom</th>
+                                        <th scope="col">Téléphone</th>
+                                        <th scope="col">Adresse mail</th>
+                                        <th scope="col">Adresse</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    {% for unP in props %}
+                                        <tr>
+                                            {% if unP.proprietaire.sexe == 0 %}
+                                                <td>Mme. {{ unP.proprietaire.nom }}</td>
+                                            {% else %}
+                                                <td>M. {{ unP.proprietaire.nom }}</td>
+                                            {% endif %}
+                                            <td>{{ unP.proprietaire.prenom }}</td>
+                                            <td>{{ unP.proprietaire.tel }}</td>
+                                            <td>{{ unP.proprietaire.email }}</td>
+                                            <td>{{ unP.proprietaire.adresse }}, {{ unP.proprietaire.ville.cp }} {{ unP.proprietaire.ville.nom }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
 
-                    </div><br/>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning">
+                            Il n'y a aucun propriétaires.
+                        </div>
+                    {% endif %}
+                    <br/>
                     {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
                         <a href="/ng/gestion/immeuble/ajout/lot/proprietaire/{{ copro.code }}" class="btn btn-outline-ngi">
                             Ajouter
@@ -93,38 +109,45 @@
                 </div>
                 <div class="col-6 col-sm-4">
                     <h4>Lots</h4>
-                    <div class="table-wrapper-scroll-y">
-                        <table class="table-copro table-hover table-dark">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Numéro</th>
-                                    <th scope="col">{{ "é"|upper }}tage</th>
-                                    <th scope="col">Surface</th>
-                                    <th scope="col">Carezze</th>
-                                    <th scope="col">Prix</th>
-                                    <th scope="col">Propriétaire</th>
-                                    <th scope="col">Type</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for unL in lots %}
+                    {% if lots|length > 0 %}
+                        <div class="table-wrapper-scroll-y">
+                            <table class="table-copro table-hover table-dark">
+                                <thead>
                                     <tr>
-                                        <td>{{ unL.num }}</td>
-                                        <td>{{ unL.etage }}</td>
-                                        <td>{{ unL.surface }} m²</td>
-                                        <td>{{ unL.carezze }} m²</td>
-                                        <td>{{ unL.prix }} €</td>
-                                        {% if unL.proprietaire.sexe == 0 %}
-                                            <td>Mme. {{ unL.proprietaire.nom }}</td>
-                                        {% else %}
-                                            <td>M. {{ unL.proprietaire.nom }}</td>
-                                        {% endif %}
-                                        <td>{{ unL.typeLot.nom }}</td>
+                                        <th scope="col">Numéro</th>
+                                        <th scope="col">{{ "é"|upper }}tage</th>
+                                        <th scope="col">Surface</th>
+                                        <th scope="col">Carezze</th>
+                                        <th scope="col">Prix</th>
+                                        <th scope="col">Propriétaire</th>
+                                        <th scope="col">Type</th>
                                     </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    </div><br/>
+                                </thead>
+                                <tbody>
+                                    {% for unL in lots %}
+                                        <tr>
+                                            <td>{{ unL.num }}</td>
+                                            <td>{{ unL.etage }}</td>
+                                            <td>{{ unL.surface }} m²</td>
+                                            <td>{{ unL.carezze }} m²</td>
+                                            <td>{{ unL.prix }} €</td>
+                                            {% if unL.proprietaire.sexe == 0 %}
+                                                <td>Mme. {{ unL.proprietaire.nom }}</td>
+                                            {% else %}
+                                                <td>M. {{ unL.proprietaire.nom }}</td>
+                                            {% endif %}
+                                            <td>{{ unL.typeLot.nom }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning">
+                            Il n'y a aucun lots.
+                        </div>
+                    {% endif %}
+                    <br/>
                     {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
                         <a href="/ng/gestion/immeuble/ajout/lot/{{ copro.code }}" class="btn btn-outline-ngi">
                             Ajouter

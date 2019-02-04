@@ -23,7 +23,7 @@ class LotType extends AbstractType
             ->add('carezze', NumberType::class, array('label'=>'Surface carezze (en m²)', 'required'=>true))
             ->add('prix', NumberType::class, array('label'=>'Prix (en €)', 'required'=>true))
             ->add('proprietaire', EntityType::class, array('label'=>'Propriétaire', 'class'=>'NGGestionnaireBundle:Proprietaire', 'choice_label'=>'identite'))
-            ->add('typeLot', EntityType::class, array('label'=>'Propriétaire', 'class'=>'NGAdministrateurBundle:TypeLot', 'choice_label'=>'nom'))
+            ->add('typeLot', EntityType::class, array('label'=>'Type du lot', 'class'=>'NGAdministrateurBundle:TypeLot', 'choice_label'=>'nom'))
             ->add('valid', SubmitType::class, array('label'=>'AJOUTER'));
     }
     

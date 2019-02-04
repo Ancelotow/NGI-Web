@@ -70,14 +70,14 @@ class ImmeubleController extends Controller
         $em = $this->getDoctrine()->getManager();
         $copro = $em->getRepository("NGGestionnaireBundle:Copropriete")->uneCopro($code);
         $em = $this->getDoctrine()->getManager();
+        if($copro == null){
+            return $this->render("NGAdministrateurBundle:Default:errorCopro.html.twig");
+        }
         $lots = $em->getRepository("NGGestionnaireBundle:Lot")->lotCopro($copro->getId());
         $em = $this->getDoctrine()->getManager();
         $props = $em->getRepository("NGGestionnaireBundle:Lot")->propsLot($copro->getId());
         $em = $this->getDoctrine()->getManager();
         $habs = $em->getRepository("NGGestionnaireBundle:Habitant")->lesHabs($copro->getId());
-        if($copro == null){
-            return $this->render("NGAdministrateurBundle:Default:errorCopro.html.twig");
-        }
         return $this->render('NGGestionnaireBundle:immeuble:copro.html.twig', array(
             "copro"=>$copro,
             "lots"=>$lots,
