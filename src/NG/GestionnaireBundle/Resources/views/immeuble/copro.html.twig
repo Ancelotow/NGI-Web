@@ -212,57 +212,40 @@
                 <div id="googleMap" class="col-6 col-sm-4" style="height:230px;"></div>
                 <div class="col-6 col-sm-2">
                     <h4>AG</h4>
-                    <div class="table-wrapper-scroll-y">
-                        <table class="table table-hover table-dark">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    {% if ags|length > 0 %}
+                        <div class="table-wrapper-scroll-y">
+                            <table class="table-copro table-hover table-dark">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Référence</th>
+                                    <th scope="col">Décisions</th>
+                                    <th scope="col">Date</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for unA in ags %}
+                                    <tr>
+                                        <td>{{ unA.ref }}</td>
+                                        <td>{{ unA.nbDecision }}</td>
+                                        <td>{{ unA.date }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
 
-                    </div></div>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning">
+                            Il n'y a aucune AG.
+                        </div>
+                    {% endif %}
+                    <br/>
+                    {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+                        <a href="/ng/gestion/immeuble/ajout/ag/{{ copro.code }}" class="btn btn-outline-ngi">
+                            Ajouter
+                        </a><br/>
+                    {% endif %}
+                </div>
                 <div class="col-6 col-sm-2">
                     <h4>CS</h4>
                     <div class="table-wrapper-scroll-y">
@@ -316,6 +299,11 @@
                         </table>
 
                     </div></div>
+            </div><br/>
+            <div class="row">
+                <div class="col-6 col-sm-2">
+                    <img src="{{ asset('image/copro_ext/') ~ copro.image }}" />
+                </div>
             </div>
 
 

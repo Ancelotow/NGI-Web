@@ -9,6 +9,12 @@
 
             <h4>Ajouter une Assemblé Générale</h4><br/>
 
+            {% if habs|length == 0   %}
+                <div class="alert alert-warning">
+                    Il n'y a aucun habitants sur cet immeuble.
+                </div>
+            {% endif %}
+
             {{ form_start(form, {'method' : 'POST'}) }}
 
             <div class="form-row">
@@ -34,6 +40,12 @@
                     {{ form_widget(form.pdf, {'attr' :  {'class' : 'form-control'}}) }}
                 </div>
             </div>
+            <div class="col-md-6 mb-3">
+                <label><strong>Liste de présence : </strong></label><br/>
+                {% for unH in habs %}
+                    <input type="checkbox" name="{{ unH.id ~ unH.nom }}" />&nbsp;{{ unH.nom }} {{ unH.prenom  }}<br/>
+                {% endfor %}
+            </div><br/>
 
             {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
 

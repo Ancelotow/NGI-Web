@@ -26,6 +26,19 @@ class AGController extends Controller
         $form   = $this->createForm(AGType::class, $ag);
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $ag->setDate($_POST['dateAG']);
+            $ag->setCopro($copro);
+            foreach($habs as $unH){
+               if(isset($_POST[$unH->getId().$unH->getNom()])){
+                   $ag->addHabitant($unH);
+               }
+            }
+            $file = $ag->getPdf();
+            $filename = $this->generateUniqueFileName().'.'.$file->guessExtension();
+            $file->move(
+                $this->getParameter('ag_directory'),
+                $filename
+            );
             $em = $this->getDoctrine()->getManager();
             $em->persist($ag);
             $em->flush();
@@ -39,6 +52,11 @@ class AGController extends Controller
             'form' => $form->createView(),
             'habs' => $habs,
         ));
+    }
+
+    private function generateUniqueFileName()
+    {
+        return md5(uniqid());
     }
 
 }
