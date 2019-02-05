@@ -3081,6 +3081,13 @@ fieldset:disabled a.btn {
   border-radius: 0.2rem;
 }
 
+.btn-vsm, .btn-group-vsm > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.4375rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
 .btn-block {
   display: block;
   width: 100%;
