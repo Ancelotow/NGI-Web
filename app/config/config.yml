@@ -10,6 +10,7 @@ parameters:
     partenaire_directory: '%kernel.project_dir%/web/image/partenaires_logo'
     copro_directory: '%kernel.project_dir%/web/image/copro_ext'
     ag_directory: '%kernel.project_dir%/web/document/pdf-ag'
+    cs_directory: '%kernel.project_dir%/web/document/pdf-cs'
 
 framework:
     #esi: ~

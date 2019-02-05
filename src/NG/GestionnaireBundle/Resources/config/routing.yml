@@ -61,3 +61,7 @@ ng_gestionnaire_immeuble-habitant-add:
 ng_gestionnaire_immeuble-ag-add:
     path:     /ng/gestion/immeuble/ajout/ag/{code}
     defaults: { _controller: NGGestionnaireBundle:AG:add }
+
+ng_gestionnaire_immeuble-cs-add:
+    path:     /ng/gestion/immeuble/ajout/cs/{code}
+    defaults: { _controller: NGGestionnaireBundle:CS:add }

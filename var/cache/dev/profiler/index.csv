@@ -312,3 +312,15 @@ a2f9ee,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549358
 5b22dc,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549358111,,200
 5736e4,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549358125,,200
 497dfa,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549358135,,200
+1c535e,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549359998,,200
+38a459,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S003,1549360002,,200
+dbb76d,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/ag/S003,1549360007,,200
+077c5a,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/cs/S001,1549360019,,200
+cdd360,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/cs/S001,1549360044,c9e091,200
+c9e091,127.0.0.1,POST,http://localhost:8000/ng/gestion/immeuble/ajout/cs/S001,1549360044,,500
+301a39,127.0.0.1,POST,http://localhost:8000/ng/gestion/immeuble/ajout/cs/S001,1549360055,,302
+ad71eb,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549360055,,200
+5663c8,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549360256,,200
+87c92b,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/cs/S001,1549360265,,200
+33bbd4,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S002,1549360275,,200
+2d1c46,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/cs/S002,1549360327,,200

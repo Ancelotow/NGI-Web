@@ -1,0 +1,34 @@
+{% extends'base.html.twig' %}
+
+{% block title %}CS{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+            <h4>Ajouter un Conseil Syndical</h4><br/>
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            <div class="col-md-4 mb-3">
+                {{ form_label(form.ref) }}
+                {{ form_widget(form.ref, {'attr' :  {'class' : 'form-control'}}) }}
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label>Date du CS</label>
+                <input type="date" name="dateCS" class="form-control" required />
+            </div>
+
+            <div class="col-md-4 mb-3">
+                {{ form_label(form.pdf) }}
+                {{ form_widget(form.pdf, {'attr' :  {'class' : 'form-control'}}) }}
+            </div>
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}
