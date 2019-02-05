@@ -3,7 +3,50 @@
 {% block title %}Carte{% endblock %}
 
 {% block body %}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
 
+    <div id="map" style="width:100%;height:85vh"></div>
+    <script>
+        $(document).ready(function(){
+            var map = L.map('map').setView([48.863051, 2.342763], 12);
+            var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'N.G. Immobilier'
+            }).addTo(map);
+
+            {% for unI in immeubles %}
+                var {{ unI.code }} = L.marker([{{ unI.lattitude }}, {{ unI.longitude }}]).addTo(map);
+                {{ unI.code }}.bindPopup("<center><b>{{ unI.code }}</b><center>{{ unI.adresse }}");
+            {% endfor %}
+
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#
     <div id="googleMap" style="width:100%;height:800px;"></div>
     <script>
         function myMap() {
@@ -15,11 +58,21 @@
             {% for unI in immeubles %}
                 var {{ unI.code }} = new google.maps.Marker({
                     position: new google.maps.LatLng({{ unI.lattitude }}, {{ unI.longitude }}),
-                    map: map
+                    map: map,
+                    icon : {
+                            path : google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+                            strokeColor: "red",
+                            scale: 3
+                    }
                 });
             {% endfor %}
+            var ng = new google.maps.Marker({
+                position: new google.maps.LatLng(48.856308, 2.362342),
+                map: map,
+                icon : '{{ asset('image/position_gm.png') }}'
+            });
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtj9bdFee1h3-H2oF_TO5Mvj3PvRFCsCE&callback=myMap"></script>
-
+#}
 {% endblock %}
