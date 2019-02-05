@@ -252,57 +252,42 @@
                 </div>
                 <div class="col-6 col-sm-2">
                     <h4>CS</h4>
-                    <div class="table-wrapper-scroll-y">
-                        <table class="table table-hover table-dark">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    {% if cs|length > 0 %}
+                        <div class="table-wrapper-scroll-y">
+                            <table class="table-copro table-hover table-dark">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Référence</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Consulter</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for unC in cs %}
+                                    <tr>
+                                        <td>{{ unC.ref }}</td>
+                                        <td>{{ unC.date }}</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-success btn-vsm">{{ 'consulter'|upper }}</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
 
-                    </div></div>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning">
+                            Il n'y a aucun CS.
+                        </div>
+                    {% endif %}
+                    <br/>
+                    {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+                        <a href="/ng/gestion/immeuble/ajout/cs/{{ copro.code }}" class="btn btn-outline-ngi">
+                            Ajouter
+                        </a><br/>
+                    {% endif %}
+                </div>
             </div><br/>
             <div class="row">
                 <div class="col-6 col-sm-2">
