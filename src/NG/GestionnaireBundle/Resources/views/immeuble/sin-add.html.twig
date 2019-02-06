@@ -1,0 +1,45 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Sinistre{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+
+            <h4>Ajouter un Sinisre</h4><br/>
+
+            {% if error == true %}
+                <div class="alert alert-warning">
+                    Il n'éxiste aucun lot sur cette copropriété
+                </div>
+            {% endif %}
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.code) }}
+                    {{ form_widget(form.code, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.type) }}
+                    {{ form_widget(form.type, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Date du sinistre</label>
+                    <input type="date" name="dateSin" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.lot) }}
+                    {{ form_widget(form.lot, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}

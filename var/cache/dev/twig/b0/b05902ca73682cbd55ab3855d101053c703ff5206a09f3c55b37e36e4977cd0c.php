@@ -22,47 +22,47 @@ class __TwigTemplate_5719d3e42471c79875d0cfea4df9e127fea20889100c6293c480b964a74
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4389546ffbc0a74f8c657764314e4fc7bb2ad4e049f8c3f2b6e71a2109f0f962 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4389546ffbc0a74f8c657764314e4fc7bb2ad4e049f8c3f2b6e71a2109f0f962->enter($__internal_4389546ffbc0a74f8c657764314e4fc7bb2ad4e049f8c3f2b6e71a2109f0f962_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
+        $__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b->enter($__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
 
-        $__internal_826a0ef384f0f8d4a31f597ef6d355c9a88faf3543562c3662100b766af0aedf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_826a0ef384f0f8d4a31f597ef6d355c9a88faf3543562c3662100b766af0aedf->enter($__internal_826a0ef384f0f8d4a31f597ef6d355c9a88faf3543562c3662100b766af0aedf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
+        $__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b->enter($__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4389546ffbc0a74f8c657764314e4fc7bb2ad4e049f8c3f2b6e71a2109f0f962->leave($__internal_4389546ffbc0a74f8c657764314e4fc7bb2ad4e049f8c3f2b6e71a2109f0f962_prof);
+        $__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b->leave($__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b_prof);
 
         
-        $__internal_826a0ef384f0f8d4a31f597ef6d355c9a88faf3543562c3662100b766af0aedf->leave($__internal_826a0ef384f0f8d4a31f597ef6d355c9a88faf3543562c3662100b766af0aedf_prof);
+        $__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b->leave($__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_fd15042a46b00f8a88f62b177ed453fdf9cf303dd5028247655c779deac68431 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fd15042a46b00f8a88f62b177ed453fdf9cf303dd5028247655c779deac68431->enter($__internal_fd15042a46b00f8a88f62b177ed453fdf9cf303dd5028247655c779deac68431_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792->enter($__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_df4b6d4fe587bc0bc65f5ccc3595c0ea5c8cb7eb474132d972b1b2c2d7979807 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_df4b6d4fe587bc0bc65f5ccc3595c0ea5c8cb7eb474132d972b1b2c2d7979807->enter($__internal_df4b6d4fe587bc0bc65f5ccc3595c0ea5c8cb7eb474132d972b1b2c2d7979807_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9->enter($__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "code", array()), "html", null, true);
         
-        $__internal_df4b6d4fe587bc0bc65f5ccc3595c0ea5c8cb7eb474132d972b1b2c2d7979807->leave($__internal_df4b6d4fe587bc0bc65f5ccc3595c0ea5c8cb7eb474132d972b1b2c2d7979807_prof);
+        $__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9->leave($__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9_prof);
 
         
-        $__internal_fd15042a46b00f8a88f62b177ed453fdf9cf303dd5028247655c779deac68431->leave($__internal_fd15042a46b00f8a88f62b177ed453fdf9cf303dd5028247655c779deac68431_prof);
+        $__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792->leave($__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_0dd4fab4a2f344a9612752f9a81f40d187a2d9a913d0b33c98cbdb1ec37578e1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0dd4fab4a2f344a9612752f9a81f40d187a2d9a913d0b33c98cbdb1ec37578e1->enter($__internal_0dd4fab4a2f344a9612752f9a81f40d187a2d9a913d0b33c98cbdb1ec37578e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469->enter($__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_845c4eedd38a6474e816d4c5369619563bb5bb63bf06c594f789e0b6d2c36929 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_845c4eedd38a6474e816d4c5369619563bb5bb63bf06c594f789e0b6d2c36929->enter($__internal_845c4eedd38a6474e816d4c5369619563bb5bb63bf06c594f789e0b6d2c36929_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04->enter($__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"container-fluid\">
@@ -387,64 +387,92 @@ $context["unH"], "membreCS", array()) == 1)) {
             <div class=\"row\">
                 <div class=\"col-6 col-sm-4\">
                     <h4>Sinistres</h4>
-                    <div class=\"table-wrapper-scroll-y\">
-                        <table class=\"table table-hover table-dark\">
-                            <thead>
-                            <tr>
-                                <th scope=\"col\">#</th>
-                                <th scope=\"col\">First</th>
-                                <th scope=\"col\">Last</th>
-                                <th scope=\"col\">Handle</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope=\"row\">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    ";
+        // line 161
+        if ((twig_length_filter($this->env, ($context["sin"] ?? $this->getContext($context, "sin"))) > 0)) {
+            // line 162
+            echo "                        <div class=\"table-wrapper-scroll-y\">
+                            <table class=\"table-copro table-hover table-dark\">
+                                <thead>
+                                <tr>
+                                    <th scope=\"col\">Code</th>
+                                    <th scope=\"col\">Type</th>
+                                    <th scope=\"col\">Date</th>
+                                    <th scope=\"col\">Lot</th>
+                                    <th scope=\"col\">Consulter</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                ";
+            // line 174
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(($context["sin"] ?? $this->getContext($context, "sin")));
+            foreach ($context['_seq'] as $context["_key"] => $context["unS"]) {
+                // line 175
+                echo "                                    <tr>
+                                        <td>";
+                // line 176
+                echo twig_escape_filter($this->env, $this->getAttribute($context["unS"], "code", array()), "html", null, true);
+                echo "</td>
+                                        <td>";
+                // line 177
+                echo twig_escape_filter($this->env, $this->getAttribute($context["unS"], "type", array()), "html", null, true);
+                echo "</td>
+                                        <td>";
+                // line 178
+                echo twig_escape_filter($this->env, $this->getAttribute($context["unS"], "date", array()), "html", null, true);
+                echo "</td>
+                                        <td>";
+                // line 179
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["unS"], "lot", array()), "num", array()), "html", null, true);
+                echo "</td>
+                                        <td>
+                                            <a href=\"#\" class=\"btn btn-outline-success btn-vsm\">";
+                // line 181
+                echo twig_escape_filter($this->env, twig_upper_filter($this->env, "consulter"), "html", null, true);
+                echo "</a>
+                                        </td>
+                                    </tr>
+                                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['unS'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 185
+            echo "                                </tbody>
+                            </table>
 
-                    </div></div>
+                        </div>
+                    ";
+        } else {
+            // line 190
+            echo "                        <div class=\"alert alert-warning\">
+                            Il n'y a aucun Sinistre.
+                        </div>
+                    ";
+        }
+        // line 194
+        echo "                    <br/>
+                    ";
+        // line 195
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted(array(0 => "ROLE_ADMIN", 1 => "ROLE_GESTIONNAIRE"))) {
+            // line 196
+            echo "                        <a href=\"/ng/gestion/immeuble/ajout/sinistre/";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "code", array()), "html", null, true);
+            echo "\" class=\"btn btn-outline-ngi\">
+                            Ajouter
+                        </a><br/>
+                    ";
+        }
+        // line 200
+        echo "                </div>
                 <div id=\"googleMap\" class=\"col-6 col-sm-4\" style=\"height:230px;\"></div>
                 <div class=\"col-6 col-sm-2\">
                     <h4>AG</h4>
                     ";
-        // line 215
+        // line 204
         if ((twig_length_filter($this->env, ($context["ags"] ?? $this->getContext($context, "ags"))) > 0)) {
-            // line 216
+            // line 205
             echo "                        <div class=\"table-wrapper-scroll-y\">
                             <table class=\"table-copro table-hover table-dark\">
                                 <thead>
@@ -457,27 +485,27 @@ $context["unH"], "membreCS", array()) == 1)) {
                                 </thead>
                                 <tbody>
                                 ";
-            // line 227
+            // line 216
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["ags"] ?? $this->getContext($context, "ags")));
             foreach ($context['_seq'] as $context["_key"] => $context["unA"]) {
-                // line 228
+                // line 217
                 echo "                                    <tr>
                                         <td>";
-                // line 229
+                // line 218
                 echo twig_escape_filter($this->env, $this->getAttribute($context["unA"], "ref", array()), "html", null, true);
                 echo "</td>
                                         <td>";
-                // line 230
+                // line 219
                 echo twig_escape_filter($this->env, $this->getAttribute($context["unA"], "nbDecision", array()), "html", null, true);
                 echo "</td>
                                         <td>";
-                // line 231
+                // line 220
                 echo twig_escape_filter($this->env, $this->getAttribute($context["unA"], "date", array()), "html", null, true);
                 echo "</td>
                                         <td>
                                             <a href=\"#\" class=\"btn btn-outline-success btn-vsm\">";
-                // line 233
+                // line 222
                 echo twig_escape_filter($this->env, twig_upper_filter($this->env, "consulter"), "html", null, true);
                 echo "</a>
                                         </td>
@@ -487,25 +515,25 @@ $context["unH"], "membreCS", array()) == 1)) {
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['unA'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 237
+            // line 226
             echo "                                </tbody>
                             </table>
 
                         </div>
                     ";
         } else {
-            // line 242
+            // line 231
             echo "                        <div class=\"alert alert-warning\">
                             Il n'y a aucune AG.
                         </div>
                     ";
         }
-        // line 246
+        // line 235
         echo "                    <br/>
                     ";
-        // line 247
+        // line 236
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted(array(0 => "ROLE_ADMIN", 1 => "ROLE_GESTIONNAIRE"))) {
-            // line 248
+            // line 237
             echo "                        <a href=\"/ng/gestion/immeuble/ajout/ag/";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "code", array()), "html", null, true);
             echo "\" class=\"btn btn-outline-ngi\">
@@ -513,14 +541,14 @@ $context["unH"], "membreCS", array()) == 1)) {
                         </a><br/>
                     ";
         }
-        // line 252
+        // line 241
         echo "                </div>
                 <div class=\"col-6 col-sm-2\">
                     <h4>CS</h4>
                     ";
-        // line 255
+        // line 244
         if ((twig_length_filter($this->env, ($context["cs"] ?? $this->getContext($context, "cs"))) > 0)) {
-            // line 256
+            // line 245
             echo "                        <div class=\"table-wrapper-scroll-y\">
                             <table class=\"table-copro table-hover table-dark\">
                                 <thead>
@@ -532,23 +560,23 @@ $context["unH"], "membreCS", array()) == 1)) {
                                 </thead>
                                 <tbody>
                                 ";
-            // line 266
+            // line 255
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["cs"] ?? $this->getContext($context, "cs")));
             foreach ($context['_seq'] as $context["_key"] => $context["unC"]) {
-                // line 267
+                // line 256
                 echo "                                    <tr>
                                         <td>";
-                // line 268
+                // line 257
                 echo twig_escape_filter($this->env, $this->getAttribute($context["unC"], "ref", array()), "html", null, true);
                 echo "</td>
                                         <td>";
-                // line 269
+                // line 258
                 echo twig_escape_filter($this->env, $this->getAttribute($context["unC"], "date", array()), "html", null, true);
                 echo "</td>
                                         <td>
                                             <a href=\"#\" class=\"btn btn-outline-success btn-vsm\">";
-                // line 271
+                // line 260
                 echo twig_escape_filter($this->env, twig_upper_filter($this->env, "consulter"), "html", null, true);
                 echo "</a>
                                         </td>
@@ -558,25 +586,25 @@ $context["unH"], "membreCS", array()) == 1)) {
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['unC'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 275
+            // line 264
             echo "                                </tbody>
                             </table>
 
                         </div>
                     ";
         } else {
-            // line 280
+            // line 269
             echo "                        <div class=\"alert alert-warning\">
                             Il n'y a aucun CS.
                         </div>
                     ";
         }
-        // line 284
+        // line 273
         echo "                    <br/>
                     ";
-        // line 285
+        // line 274
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted(array(0 => "ROLE_ADMIN", 1 => "ROLE_GESTIONNAIRE"))) {
-            // line 286
+            // line 275
             echo "                        <a href=\"/ng/gestion/immeuble/ajout/cs/";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "code", array()), "html", null, true);
             echo "\" class=\"btn btn-outline-ngi\">
@@ -584,17 +612,15 @@ $context["unH"], "membreCS", array()) == 1)) {
                         </a><br/>
                     ";
         }
-        // line 290
+        // line 279
         echo "                </div>
             </div><br/>
-            <div class=\"row\">
-                <div class=\"col-6 col-sm-2\">
+            <center>
                     <img src=\"";
-        // line 294
+        // line 282
         echo twig_escape_filter($this->env, ($this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("image/copro_ext/") . $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "image", array())), "html", null, true);
         echo "\" />
-                </div><br/>
-            </div>
+            </center><br/>
 
 
 
@@ -603,7 +629,7 @@ $context["unH"], "membreCS", array()) == 1)) {
     function myMap() {
         var mapProp= {
             center:new google.maps.LatLng(";
-        // line 304
+        // line 291
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "lattitude", array()), "html", null, true);
         echo ",";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "longitude", array()), "html", null, true);
@@ -613,7 +639,7 @@ $context["unH"], "membreCS", array()) == 1)) {
         var map = new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);
         var marqueur = new google.maps.Marker({
             position: new google.maps.LatLng(";
-        // line 309
+        // line 296
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "lattitude", array()), "html", null, true);
         echo ",";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "longitude", array()), "html", null, true);
@@ -625,10 +651,10 @@ $context["unH"], "membreCS", array()) == 1)) {
     <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCtj9bdFee1h3-H2oF_TO5Mvj3PvRFCsCE&callback=myMap\"></script>
 ";
         
-        $__internal_845c4eedd38a6474e816d4c5369619563bb5bb63bf06c594f789e0b6d2c36929->leave($__internal_845c4eedd38a6474e816d4c5369619563bb5bb63bf06c594f789e0b6d2c36929_prof);
+        $__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04->leave($__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04_prof);
 
         
-        $__internal_0dd4fab4a2f344a9612752f9a81f40d187a2d9a913d0b33c98cbdb1ec37578e1->leave($__internal_0dd4fab4a2f344a9612752f9a81f40d187a2d9a913d0b33c98cbdb1ec37578e1_prof);
+        $__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469->leave($__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469_prof);
 
     }
 
@@ -644,7 +670,7 @@ $context["unH"], "membreCS", array()) == 1)) {
 
     public function getDebugInfo()
     {
-        return array (  617 => 309,  607 => 304,  594 => 294,  588 => 290,  580 => 286,  578 => 285,  575 => 284,  569 => 280,  562 => 275,  552 => 271,  547 => 269,  543 => 268,  540 => 267,  536 => 266,  524 => 256,  522 => 255,  517 => 252,  509 => 248,  507 => 247,  504 => 246,  498 => 242,  491 => 237,  481 => 233,  476 => 231,  472 => 230,  468 => 229,  465 => 228,  461 => 227,  448 => 216,  446 => 215,  385 => 156,  377 => 152,  375 => 151,  372 => 150,  366 => 146,  360 => 142,  350 => 139,  344 => 137,  338 => 135,  336 => 134,  332 => 133,  328 => 132,  324 => 131,  320 => 130,  316 => 129,  313 => 128,  309 => 127,  297 => 118,  290 => 113,  288 => 112,  283 => 109,  275 => 105,  273 => 104,  270 => 103,  264 => 99,  257 => 94,  244 => 91,  240 => 90,  236 => 89,  231 => 88,  225 => 86,  219 => 84,  217 => 83,  214 => 82,  210 => 81,  196 => 69,  194 => 68,  189 => 65,  181 => 61,  179 => 60,  176 => 59,  170 => 55,  162 => 49,  153 => 46,  149 => 45,  145 => 44,  141 => 43,  136 => 42,  130 => 40,  124 => 38,  121 => 37,  117 => 35,  113 => 33,  111 => 32,  108 => 31,  105 => 30,  101 => 29,  85 => 15,  83 => 14,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  643 => 296,  633 => 291,  621 => 282,  616 => 279,  608 => 275,  606 => 274,  603 => 273,  597 => 269,  590 => 264,  580 => 260,  575 => 258,  571 => 257,  568 => 256,  564 => 255,  552 => 245,  550 => 244,  545 => 241,  537 => 237,  535 => 236,  532 => 235,  526 => 231,  519 => 226,  509 => 222,  504 => 220,  500 => 219,  496 => 218,  493 => 217,  489 => 216,  476 => 205,  474 => 204,  468 => 200,  460 => 196,  458 => 195,  455 => 194,  449 => 190,  442 => 185,  432 => 181,  427 => 179,  423 => 178,  419 => 177,  415 => 176,  412 => 175,  408 => 174,  394 => 162,  392 => 161,  385 => 156,  377 => 152,  375 => 151,  372 => 150,  366 => 146,  360 => 142,  350 => 139,  344 => 137,  338 => 135,  336 => 134,  332 => 133,  328 => 132,  324 => 131,  320 => 130,  316 => 129,  313 => 128,  309 => 127,  297 => 118,  290 => 113,  288 => 112,  283 => 109,  275 => 105,  273 => 104,  270 => 103,  264 => 99,  257 => 94,  244 => 91,  240 => 90,  236 => 89,  231 => 88,  225 => 86,  219 => 84,  217 => 83,  214 => 82,  210 => 81,  196 => 69,  194 => 68,  189 => 65,  181 => 61,  179 => 60,  176 => 59,  170 => 55,  162 => 49,  153 => 46,  149 => 45,  145 => 44,  141 => 43,  136 => 42,  130 => 40,  124 => 38,  121 => 37,  117 => 35,  113 => 33,  111 => 32,  108 => 31,  105 => 30,  101 => 29,  85 => 15,  83 => 14,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -817,57 +843,46 @@ $context["unH"], "membreCS", array()) == 1)) {
             <div class=\"row\">
                 <div class=\"col-6 col-sm-4\">
                     <h4>Sinistres</h4>
-                    <div class=\"table-wrapper-scroll-y\">
-                        <table class=\"table table-hover table-dark\">
-                            <thead>
-                            <tr>
-                                <th scope=\"col\">#</th>
-                                <th scope=\"col\">First</th>
-                                <th scope=\"col\">Last</th>
-                                <th scope=\"col\">Handle</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope=\"row\">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope=\"row\">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    {% if sin|length > 0 %}
+                        <div class=\"table-wrapper-scroll-y\">
+                            <table class=\"table-copro table-hover table-dark\">
+                                <thead>
+                                <tr>
+                                    <th scope=\"col\">Code</th>
+                                    <th scope=\"col\">Type</th>
+                                    <th scope=\"col\">Date</th>
+                                    <th scope=\"col\">Lot</th>
+                                    <th scope=\"col\">Consulter</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for unS in sin %}
+                                    <tr>
+                                        <td>{{ unS.code }}</td>
+                                        <td>{{ unS.type }}</td>
+                                        <td>{{ unS.date }}</td>
+                                        <td>{{ unS.lot.num }}</td>
+                                        <td>
+                                            <a href=\"#\" class=\"btn btn-outline-success btn-vsm\">{{ 'consulter'|upper }}</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
 
-                    </div></div>
+                        </div>
+                    {% else %}
+                        <div class=\"alert alert-warning\">
+                            Il n'y a aucun Sinistre.
+                        </div>
+                    {% endif %}
+                    <br/>
+                    {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+                        <a href=\"/ng/gestion/immeuble/ajout/sinistre/{{ copro.code }}\" class=\"btn btn-outline-ngi\">
+                            Ajouter
+                        </a><br/>
+                    {% endif %}
+                </div>
                 <div id=\"googleMap\" class=\"col-6 col-sm-4\" style=\"height:230px;\"></div>
                 <div class=\"col-6 col-sm-2\">
                     <h4>AG</h4>
@@ -948,11 +963,9 @@ $context["unH"], "membreCS", array()) == 1)) {
                     {% endif %}
                 </div>
             </div><br/>
-            <div class=\"row\">
-                <div class=\"col-6 col-sm-2\">
+            <center>
                     <img src=\"{{ asset('image/copro_ext/') ~ copro.image }}\" />
-                </div><br/>
-            </div>
+            </center><br/>
 
 
 

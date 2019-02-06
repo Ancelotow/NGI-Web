@@ -82,6 +82,8 @@ class ImmeubleController extends Controller
         $ags = $em->getRepository("NGGestionnaireBundle:AG")->lesAgs($copro->getId());
         $em = $this->getDoctrine()->getManager();
         $cs = $em->getRepository("NGGestionnaireBundle:CS")->lesCS($copro->getId());
+        $em = $this->getDoctrine()->getManager();
+        $sin = $em->getRepository("NGGestionnaireBundle:Sinistre")->lesSin($copro->getId());
         return $this->render('NGGestionnaireBundle:immeuble:copro.html.twig', array(
             "copro"=>$copro,
             "lots"=>$lots,
@@ -89,6 +91,7 @@ class ImmeubleController extends Controller
             "habs"=>$habs,
             "ags"=>$ags,
             "cs"=>$cs,
+            "sin"=>$sin,
         ));
     }
 
