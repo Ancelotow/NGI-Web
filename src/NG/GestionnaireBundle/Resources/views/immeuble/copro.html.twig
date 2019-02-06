@@ -280,6 +280,7 @@
             </div><br/>
             <center>
                     <img src="{{ asset('image/copro_ext/') ~ copro.image }}" />
+                <a href="/ng/pdf">Test pdf</a>
             </center><br/>
 
 
@@ -301,8 +302,6 @@
                 attribution: 'N.G. Immobilier'
             }).addTo(map);
             var marqueur = L.marker([{{ copro.lattitude }}, {{ copro.longitude }}]).addTo(map);
-
-
 
         });
     }

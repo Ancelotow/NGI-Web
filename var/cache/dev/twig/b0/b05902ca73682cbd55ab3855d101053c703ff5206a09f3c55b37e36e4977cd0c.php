@@ -22,47 +22,47 @@ class __TwigTemplate_5719d3e42471c79875d0cfea4df9e127fea20889100c6293c480b964a74
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2->enter($__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
+        $__internal_fc4335f917903dc0fd77310978c5c6ab791b82b368f9e1c5352400cba8ccd944 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fc4335f917903dc0fd77310978c5c6ab791b82b368f9e1c5352400cba8ccd944->enter($__internal_fc4335f917903dc0fd77310978c5c6ab791b82b368f9e1c5352400cba8ccd944_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
 
-        $__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847->enter($__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
+        $__internal_4bd20f58e91d05fc6a81b63726c6da0e6b72892f3fe6aa2dc04894283729065c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4bd20f58e91d05fc6a81b63726c6da0e6b72892f3fe6aa2dc04894283729065c->enter($__internal_4bd20f58e91d05fc6a81b63726c6da0e6b72892f3fe6aa2dc04894283729065c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2->leave($__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2_prof);
+        $__internal_fc4335f917903dc0fd77310978c5c6ab791b82b368f9e1c5352400cba8ccd944->leave($__internal_fc4335f917903dc0fd77310978c5c6ab791b82b368f9e1c5352400cba8ccd944_prof);
 
         
-        $__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847->leave($__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847_prof);
+        $__internal_4bd20f58e91d05fc6a81b63726c6da0e6b72892f3fe6aa2dc04894283729065c->leave($__internal_4bd20f58e91d05fc6a81b63726c6da0e6b72892f3fe6aa2dc04894283729065c_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e->enter($__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_7be87d83277043247c4de9d78e366dee0b48e89f8b9b90835c7479019934e986 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7be87d83277043247c4de9d78e366dee0b48e89f8b9b90835c7479019934e986->enter($__internal_7be87d83277043247c4de9d78e366dee0b48e89f8b9b90835c7479019934e986_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879->enter($__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_1562d341f8466eebb66b6936a51bd4743efb7375dac0b7ac670b6305c02fe8d4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1562d341f8466eebb66b6936a51bd4743efb7375dac0b7ac670b6305c02fe8d4->enter($__internal_1562d341f8466eebb66b6936a51bd4743efb7375dac0b7ac670b6305c02fe8d4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "code", array()), "html", null, true);
         
-        $__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879->leave($__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879_prof);
+        $__internal_1562d341f8466eebb66b6936a51bd4743efb7375dac0b7ac670b6305c02fe8d4->leave($__internal_1562d341f8466eebb66b6936a51bd4743efb7375dac0b7ac670b6305c02fe8d4_prof);
 
         
-        $__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e->leave($__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e_prof);
+        $__internal_7be87d83277043247c4de9d78e366dee0b48e89f8b9b90835c7479019934e986->leave($__internal_7be87d83277043247c4de9d78e366dee0b48e89f8b9b90835c7479019934e986_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9->enter($__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_724b23de67cd29d79ce433a9fee04a1899b1af6dfb2dd53092439cb70223fc33 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_724b23de67cd29d79ce433a9fee04a1899b1af6dfb2dd53092439cb70223fc33->enter($__internal_724b23de67cd29d79ce433a9fee04a1899b1af6dfb2dd53092439cb70223fc33_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6->enter($__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_99cf6982e66e0c79c41bf4aba1be6340e5053ac922ca6ccf65e31cc4d4bc0b2a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_99cf6982e66e0c79c41bf4aba1be6340e5053ac922ca6ccf65e31cc4d4bc0b2a->enter($__internal_99cf6982e66e0c79c41bf4aba1be6340e5053ac922ca6ccf65e31cc4d4bc0b2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"container-fluid\">
@@ -620,6 +620,7 @@ $context["unH"], "membreCS", array()) == 1)) {
         // line 282
         echo twig_escape_filter($this->env, ($this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("image/copro_ext/") . $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "image", array())), "html", null, true);
         echo "\" />
+                <a href=\"/ng/pdf\">Test pdf</a>
             </center><br/>
 
 
@@ -637,7 +638,7 @@ $context["unH"], "membreCS", array()) == 1)) {
     function myMap() {
         \$(document).ready(function(){
             var map = L.map('map').setView([";
-        // line 299
+        // line 300
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "lattitude", array()), "html", null, true);
         echo ", ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "longitude", array()), "html", null, true);
@@ -646,13 +647,11 @@ $context["unH"], "membreCS", array()) == 1)) {
                 attribution: 'N.G. Immobilier'
             }).addTo(map);
             var marqueur = L.marker([";
-        // line 303
+        // line 304
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "lattitude", array()), "html", null, true);
         echo ", ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "longitude", array()), "html", null, true);
         echo "]).addTo(map);
-
-
 
         });
     }
@@ -660,10 +659,10 @@ $context["unH"], "membreCS", array()) == 1)) {
     <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCtj9bdFee1h3-H2oF_TO5Mvj3PvRFCsCE&callback=myMap\"></script>
 ";
         
-        $__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6->leave($__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6_prof);
+        $__internal_99cf6982e66e0c79c41bf4aba1be6340e5053ac922ca6ccf65e31cc4d4bc0b2a->leave($__internal_99cf6982e66e0c79c41bf4aba1be6340e5053ac922ca6ccf65e31cc4d4bc0b2a_prof);
 
         
-        $__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9->leave($__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9_prof);
+        $__internal_724b23de67cd29d79ce433a9fee04a1899b1af6dfb2dd53092439cb70223fc33->leave($__internal_724b23de67cd29d79ce433a9fee04a1899b1af6dfb2dd53092439cb70223fc33_prof);
 
     }
 
@@ -679,7 +678,7 @@ $context["unH"], "membreCS", array()) == 1)) {
 
     public function getDebugInfo()
     {
-        return array (  650 => 303,  641 => 299,  621 => 282,  616 => 279,  608 => 275,  606 => 274,  603 => 273,  597 => 269,  590 => 264,  580 => 260,  575 => 258,  571 => 257,  568 => 256,  564 => 255,  552 => 245,  550 => 244,  545 => 241,  537 => 237,  535 => 236,  532 => 235,  526 => 231,  519 => 226,  509 => 222,  504 => 220,  500 => 219,  496 => 218,  493 => 217,  489 => 216,  476 => 205,  474 => 204,  468 => 200,  460 => 196,  458 => 195,  455 => 194,  449 => 190,  442 => 185,  432 => 181,  427 => 179,  423 => 178,  419 => 177,  415 => 176,  412 => 175,  408 => 174,  394 => 162,  392 => 161,  385 => 156,  377 => 152,  375 => 151,  372 => 150,  366 => 146,  360 => 142,  350 => 139,  344 => 137,  338 => 135,  336 => 134,  332 => 133,  328 => 132,  324 => 131,  320 => 130,  316 => 129,  313 => 128,  309 => 127,  297 => 118,  290 => 113,  288 => 112,  283 => 109,  275 => 105,  273 => 104,  270 => 103,  264 => 99,  257 => 94,  244 => 91,  240 => 90,  236 => 89,  231 => 88,  225 => 86,  219 => 84,  217 => 83,  214 => 82,  210 => 81,  196 => 69,  194 => 68,  189 => 65,  181 => 61,  179 => 60,  176 => 59,  170 => 55,  162 => 49,  153 => 46,  149 => 45,  145 => 44,  141 => 43,  136 => 42,  130 => 40,  124 => 38,  121 => 37,  117 => 35,  113 => 33,  111 => 32,  108 => 31,  105 => 30,  101 => 29,  85 => 15,  83 => 14,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  651 => 304,  642 => 300,  621 => 282,  616 => 279,  608 => 275,  606 => 274,  603 => 273,  597 => 269,  590 => 264,  580 => 260,  575 => 258,  571 => 257,  568 => 256,  564 => 255,  552 => 245,  550 => 244,  545 => 241,  537 => 237,  535 => 236,  532 => 235,  526 => 231,  519 => 226,  509 => 222,  504 => 220,  500 => 219,  496 => 218,  493 => 217,  489 => 216,  476 => 205,  474 => 204,  468 => 200,  460 => 196,  458 => 195,  455 => 194,  449 => 190,  442 => 185,  432 => 181,  427 => 179,  423 => 178,  419 => 177,  415 => 176,  412 => 175,  408 => 174,  394 => 162,  392 => 161,  385 => 156,  377 => 152,  375 => 151,  372 => 150,  366 => 146,  360 => 142,  350 => 139,  344 => 137,  338 => 135,  336 => 134,  332 => 133,  328 => 132,  324 => 131,  320 => 130,  316 => 129,  313 => 128,  309 => 127,  297 => 118,  290 => 113,  288 => 112,  283 => 109,  275 => 105,  273 => 104,  270 => 103,  264 => 99,  257 => 94,  244 => 91,  240 => 90,  236 => 89,  231 => 88,  225 => 86,  219 => 84,  217 => 83,  214 => 82,  210 => 81,  196 => 69,  194 => 68,  189 => 65,  181 => 61,  179 => 60,  176 => 59,  170 => 55,  162 => 49,  153 => 46,  149 => 45,  145 => 44,  141 => 43,  136 => 42,  130 => 40,  124 => 38,  121 => 37,  117 => 35,  113 => 33,  111 => 32,  108 => 31,  105 => 30,  101 => 29,  85 => 15,  83 => 14,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -974,6 +973,7 @@ $context["unH"], "membreCS", array()) == 1)) {
             </div><br/>
             <center>
                     <img src=\"{{ asset('image/copro_ext/') ~ copro.image }}\" />
+                <a href=\"/ng/pdf\">Test pdf</a>
             </center><br/>
 
 
@@ -995,8 +995,6 @@ $context["unH"], "membreCS", array()) == 1)) {
                 attribution: 'N.G. Immobilier'
             }).addTo(map);
             var marqueur = L.marker([{{ copro.lattitude }}, {{ copro.longitude }}]).addTo(map);
-
-
 
         });
     }

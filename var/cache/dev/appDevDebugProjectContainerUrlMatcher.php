@@ -236,6 +236,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
             }
 
+            // ng_gestionnaire_pdf-test
+            if ('/ng/pdf' === $pathinfo) {
+                return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\DefaultController::pdfAction',  '_route' => 'ng_gestionnaire_pdf-test',);
+            }
+
             // ng_administrateur_homepage
             if ('/ng' === $trimmedPathinfo) {
                 if (substr($pathinfo, -1) !== '/') {

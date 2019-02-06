@@ -69,3 +69,7 @@ ng_gestionnaire_immeuble-cs-add:
 ng_gestionnaire_immeuble-sinistre-add:
     path:     /ng/gestion/immeuble/ajout/sinistre/{code}
     defaults: { _controller: NGGestionnaireBundle:Sinistre:add }
+
+ng_gestionnaire_pdf-test:
+    path:     /ng/pdf
+    defaults: { _controller: NGGestionnaireBundle:Default:pdf }
