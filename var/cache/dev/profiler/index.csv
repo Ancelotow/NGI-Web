@@ -454,3 +454,12 @@ e663f5,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/sinistre/S0
 8ae6a6,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S002,1549460775,,200
 c7e13b,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/sinistre/S002,1549460779,,200
 233880,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/sinistre/S001,1549460783,,200
+9e359c,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout/sinistre/S001,1549461186,,200
+67fe68,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble,1549461205,,200
+6ca68a,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549461210,,200
+e36127,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549461238,,200
+2b3f0f,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549461249,,200
+41c840,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549461345,,200
+a04e3a,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/code/S001,1549461382,,200
+97322f,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble,1549461488,,200
+84de09,127.0.0.1,GET,http://localhost:8000/ng/gestion/immeuble/ajout,1549461506,,200

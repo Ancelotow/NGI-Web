@@ -198,7 +198,7 @@
                         </a><br/>
                     {% endif %}
                 </div>
-                <div id="googleMap" class="col-6 col-sm-4" style="height:230px;"></div>
+                <div id="map" class="col-6 col-sm-4" style="height:230px;"></div>
                 <div class="col-6 col-sm-2">
                     <h4>AG</h4>
                     {% if ags|length > 0 %}
@@ -285,16 +285,25 @@
 
 
         </center></div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
     <script>
     function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng({{ copro.lattitude }},{{ copro.longitude }}),
-            zoom:18,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        var marqueur = new google.maps.Marker({
-            position: new google.maps.LatLng({{ copro.lattitude }},{{ copro.longitude }}),
-            map: map
+        $(document).ready(function(){
+            var map = L.map('map').setView([{{ copro.lattitude }}, {{ copro.longitude }}], 19);
+            var Esri_WorldImagery = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'N.G. Immobilier'
+            }).addTo(map);
+            var marqueur = L.marker([{{ copro.lattitude }}, {{ copro.longitude }}]).addTo(map);
+
+
+
         });
     }
     </script>

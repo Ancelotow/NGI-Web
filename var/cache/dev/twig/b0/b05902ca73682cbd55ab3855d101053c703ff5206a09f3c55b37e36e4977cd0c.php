@@ -22,47 +22,47 @@ class __TwigTemplate_5719d3e42471c79875d0cfea4df9e127fea20889100c6293c480b964a74
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b->enter($__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
+        $__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2->enter($__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
 
-        $__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b->enter($__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
+        $__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847->enter($__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:copro.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b->leave($__internal_f86262847dc7ce37d73c68dddef2abcf4fad3916bc88abd65a027a39cc93e00b_prof);
+        $__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2->leave($__internal_dae078ff11d9c436f5bd4d6746816d81cd63c2b4c87c7b4c8f5801eeb72ec6a2_prof);
 
         
-        $__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b->leave($__internal_aae6c40fa51792a84652489ea5e4a93183f8e92727158a1bb76ab6019b00fe8b_prof);
+        $__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847->leave($__internal_a5576ec5c3d8ec6663497109fdba15af8e2544545bdd36bf78b158ebab05c847_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792->enter($__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e->enter($__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9->enter($__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879->enter($__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "code", array()), "html", null, true);
         
-        $__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9->leave($__internal_97c0ef20e02ce67ace74c7630099b6eb40e47f95351a118a28fd26ca001e10e9_prof);
+        $__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879->leave($__internal_e2a776f98082e747ecf1fc0fc33d4c77125643153d300ca1263aea8312206879_prof);
 
         
-        $__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792->leave($__internal_73ea502dd076a8ac22d24bbbb89974af618dd99b1eff03cedacd32dbec1ca792_prof);
+        $__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e->leave($__internal_fa80d4f9fdbb9cfc7b941fdb8ff16776240959befa82a66c92f06f351cc3a28e_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469->enter($__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9->enter($__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04->enter($__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6->enter($__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"container-fluid\">
@@ -466,7 +466,7 @@ $context["unH"], "membreCS", array()) == 1)) {
         }
         // line 200
         echo "                </div>
-                <div id=\"googleMap\" class=\"col-6 col-sm-4\" style=\"height:230px;\"></div>
+                <div id=\"map\" class=\"col-6 col-sm-4\" style=\"height:230px;\"></div>
                 <div class=\"col-6 col-sm-2\">
                     <h4>AG</h4>
                     ";
@@ -625,36 +625,45 @@ $context["unH"], "membreCS", array()) == 1)) {
 
 
         </center></div>
+
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.css\"
+          integrity=\"sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==\"
+          crossorigin=\"\"/>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+    <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"
+            integrity=\"sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==\"
+            crossorigin=\"\"></script>
     <script>
     function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(";
-        // line 291
+        \$(document).ready(function(){
+            var map = L.map('map').setView([";
+        // line 299
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "lattitude", array()), "html", null, true);
-        echo ",";
+        echo ", ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "longitude", array()), "html", null, true);
-        echo "),
-            zoom:18,
-        };
-        var map = new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);
-        var marqueur = new google.maps.Marker({
-            position: new google.maps.LatLng(";
-        // line 296
+        echo "], 19);
+            var Esri_WorldImagery = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'N.G. Immobilier'
+            }).addTo(map);
+            var marqueur = L.marker([";
+        // line 303
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "lattitude", array()), "html", null, true);
-        echo ",";
+        echo ", ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["copro"] ?? $this->getContext($context, "copro")), "longitude", array()), "html", null, true);
-        echo "),
-            map: map
+        echo "]).addTo(map);
+
+
+
         });
     }
     </script>
     <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCtj9bdFee1h3-H2oF_TO5Mvj3PvRFCsCE&callback=myMap\"></script>
 ";
         
-        $__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04->leave($__internal_5e3cec41d624f35f4fb170477e900d75df920e5c977544a4f315236bdd54ba04_prof);
+        $__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6->leave($__internal_1ed1074c59d05cb43e22591304c1d81644dd0854c9bae58ef6c550fe005efaa6_prof);
 
         
-        $__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469->leave($__internal_2ecddeccce507755e84e5c7718a859d54865edee7e4b14b20be1914e3caea469_prof);
+        $__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9->leave($__internal_1cc07b6699cf08fe05da7d4fde910bbc8569ead32342c35b9c859ba50b0a63a9_prof);
 
     }
 
@@ -670,7 +679,7 @@ $context["unH"], "membreCS", array()) == 1)) {
 
     public function getDebugInfo()
     {
-        return array (  643 => 296,  633 => 291,  621 => 282,  616 => 279,  608 => 275,  606 => 274,  603 => 273,  597 => 269,  590 => 264,  580 => 260,  575 => 258,  571 => 257,  568 => 256,  564 => 255,  552 => 245,  550 => 244,  545 => 241,  537 => 237,  535 => 236,  532 => 235,  526 => 231,  519 => 226,  509 => 222,  504 => 220,  500 => 219,  496 => 218,  493 => 217,  489 => 216,  476 => 205,  474 => 204,  468 => 200,  460 => 196,  458 => 195,  455 => 194,  449 => 190,  442 => 185,  432 => 181,  427 => 179,  423 => 178,  419 => 177,  415 => 176,  412 => 175,  408 => 174,  394 => 162,  392 => 161,  385 => 156,  377 => 152,  375 => 151,  372 => 150,  366 => 146,  360 => 142,  350 => 139,  344 => 137,  338 => 135,  336 => 134,  332 => 133,  328 => 132,  324 => 131,  320 => 130,  316 => 129,  313 => 128,  309 => 127,  297 => 118,  290 => 113,  288 => 112,  283 => 109,  275 => 105,  273 => 104,  270 => 103,  264 => 99,  257 => 94,  244 => 91,  240 => 90,  236 => 89,  231 => 88,  225 => 86,  219 => 84,  217 => 83,  214 => 82,  210 => 81,  196 => 69,  194 => 68,  189 => 65,  181 => 61,  179 => 60,  176 => 59,  170 => 55,  162 => 49,  153 => 46,  149 => 45,  145 => 44,  141 => 43,  136 => 42,  130 => 40,  124 => 38,  121 => 37,  117 => 35,  113 => 33,  111 => 32,  108 => 31,  105 => 30,  101 => 29,  85 => 15,  83 => 14,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  650 => 303,  641 => 299,  621 => 282,  616 => 279,  608 => 275,  606 => 274,  603 => 273,  597 => 269,  590 => 264,  580 => 260,  575 => 258,  571 => 257,  568 => 256,  564 => 255,  552 => 245,  550 => 244,  545 => 241,  537 => 237,  535 => 236,  532 => 235,  526 => 231,  519 => 226,  509 => 222,  504 => 220,  500 => 219,  496 => 218,  493 => 217,  489 => 216,  476 => 205,  474 => 204,  468 => 200,  460 => 196,  458 => 195,  455 => 194,  449 => 190,  442 => 185,  432 => 181,  427 => 179,  423 => 178,  419 => 177,  415 => 176,  412 => 175,  408 => 174,  394 => 162,  392 => 161,  385 => 156,  377 => 152,  375 => 151,  372 => 150,  366 => 146,  360 => 142,  350 => 139,  344 => 137,  338 => 135,  336 => 134,  332 => 133,  328 => 132,  324 => 131,  320 => 130,  316 => 129,  313 => 128,  309 => 127,  297 => 118,  290 => 113,  288 => 112,  283 => 109,  275 => 105,  273 => 104,  270 => 103,  264 => 99,  257 => 94,  244 => 91,  240 => 90,  236 => 89,  231 => 88,  225 => 86,  219 => 84,  217 => 83,  214 => 82,  210 => 81,  196 => 69,  194 => 68,  189 => 65,  181 => 61,  179 => 60,  176 => 59,  170 => 55,  162 => 49,  153 => 46,  149 => 45,  145 => 44,  141 => 43,  136 => 42,  130 => 40,  124 => 38,  121 => 37,  117 => 35,  113 => 33,  111 => 32,  108 => 31,  105 => 30,  101 => 29,  85 => 15,  83 => 14,  73 => 9,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -883,7 +892,7 @@ $context["unH"], "membreCS", array()) == 1)) {
                         </a><br/>
                     {% endif %}
                 </div>
-                <div id=\"googleMap\" class=\"col-6 col-sm-4\" style=\"height:230px;\"></div>
+                <div id=\"map\" class=\"col-6 col-sm-4\" style=\"height:230px;\"></div>
                 <div class=\"col-6 col-sm-2\">
                     <h4>AG</h4>
                     {% if ags|length > 0 %}
@@ -970,16 +979,25 @@ $context["unH"], "membreCS", array()) == 1)) {
 
 
         </center></div>
+
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.css\"
+          integrity=\"sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==\"
+          crossorigin=\"\"/>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+    <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"
+            integrity=\"sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==\"
+            crossorigin=\"\"></script>
     <script>
     function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng({{ copro.lattitude }},{{ copro.longitude }}),
-            zoom:18,
-        };
-        var map = new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);
-        var marqueur = new google.maps.Marker({
-            position: new google.maps.LatLng({{ copro.lattitude }},{{ copro.longitude }}),
-            map: map
+        \$(document).ready(function(){
+            var map = L.map('map').setView([{{ copro.lattitude }}, {{ copro.longitude }}], 19);
+            var Esri_WorldImagery = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'N.G. Immobilier'
+            }).addTo(map);
+            var marqueur = L.marker([{{ copro.lattitude }}, {{ copro.longitude }}]).addTo(map);
+
+
+
         });
     }
     </script>
