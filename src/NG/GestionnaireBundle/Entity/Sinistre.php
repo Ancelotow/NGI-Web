@@ -2,7 +2,10 @@
 
 namespace NG\GestionnaireBundle\Entity;
 
+use Doctrine\DBAL\Types\FloatType;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Config\Definition\FloatNode;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 
 /**
  * Sinistre
@@ -46,12 +49,6 @@ class Sinistre
      * @ORM\ManyToOne(targetEntity="NG\GestionnaireBundle\Entity\Lot")
      */
     private $lot;
-
-    /**
-     * @ORM\ManyToMany(targetEntity="NG\AdministrateurBundle\Entity\Entreprise")
-     */
-    private $entreprise;
-
 
     /**
      * Get id
@@ -134,13 +131,6 @@ class Sinistre
     {
         return $this->date;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->entreprise = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
     /**
      * Set lot
@@ -164,39 +154,5 @@ class Sinistre
     public function getLot()
     {
         return $this->lot;
-    }
-
-    /**
-     * Add entreprise
-     *
-     * @param \NG\AdministrateurBundle\Entity\Entreprise $entreprise
-     *
-     * @return Sinistre
-     */
-    public function addEntreprise(\NG\AdministrateurBundle\Entity\Entreprise $entreprise)
-    {
-        $this->entreprise[] = $entreprise;
-
-        return $this;
-    }
-
-    /**
-     * Remove entreprise
-     *
-     * @param \NG\AdministrateurBundle\Entity\Entreprise $entreprise
-     */
-    public function removeEntreprise(\NG\AdministrateurBundle\Entity\Entreprise $entreprise)
-    {
-        $this->entreprise->removeElement($entreprise);
-    }
-
-    /**
-     * Get entreprise
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getEntreprise()
-    {
-        return $this->entreprise;
     }
 }

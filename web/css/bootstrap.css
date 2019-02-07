@@ -6293,7 +6293,7 @@ a.close.disabled {
   -ms-flex-pack: center;
   justify-content: center;
   width: 15%;
-  color: #fff;
+  color: #ae1f23;
   text-align: center;
   opacity: 0.5;
   transition: opacity 0.15s ease;
@@ -6309,7 +6309,7 @@ a.close.disabled {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #ae1f23;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6366,7 +6366,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #ae1f23;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -6392,7 +6392,7 @@ a.close.disabled {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #ae1f23;
   text-align: center;
 }
 

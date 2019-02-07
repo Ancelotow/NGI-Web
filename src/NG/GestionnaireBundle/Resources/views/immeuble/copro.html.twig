@@ -173,6 +173,7 @@
                                     <th scope="col">Date</th>
                                     <th scope="col">Lot</th>
                                     <th scope="col">Consulter</th>
+                                    <th scope="col">PDF</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -183,7 +184,12 @@
                                         <td>{{ unS.date }}</td>
                                         <td>{{ unS.lot.num }}</td>
                                         <td>
-                                            <a href="#" class="btn btn-outline-success btn-vsm">{{ 'consulter'|upper }}</a>
+                                            <a href="/ng/gestion/sinistre/{{ unS.code }}" class="btn btn-outline-success btn-vsm">{{ 'consulter'|upper }}</a>
+                                        </td>
+                                        <td>
+                                            <a href="/ng/gestion/immeuble/pdf/sinistre/{{ unS.id }}" target="_blank" class="btn btn-outline-danger btn-vsm">
+                                                <img src="{{ asset('/image/pdf-logo.png') }}" alt="logo-pdf" width="15" />
+                                            </a>
                                         </td>
                                     </tr>
                                 {% endfor %}
@@ -285,7 +291,6 @@
             </div><br/>
             <center>
                     <img src="{{ asset('image/copro_ext/') ~ copro.image }}" />
-                <a href="/ng/pdf">Test pdf</a>
             </center><br/>
 
 

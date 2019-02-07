@@ -119,55 +119,55 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'NG\\ComptableBundle\\Controller\\DefaultController::indexAction',  '_route' => 'ng_comptable_homepage',);
             }
 
-            if (0 === strpos($pathinfo, '/ng/ge')) {
-                if (0 === strpos($pathinfo, '/ng/geolocalisation')) {
-                    if (0 === strpos($pathinfo, '/ng/geolocalisation/region')) {
-                        // ng_gestionnaire_geolocalisation-region-index
-                        if ('/ng/geolocalisation/region' === $pathinfo) {
-                            return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\RegionController::indexAction',  '_route' => 'ng_gestionnaire_geolocalisation-region-index',);
-                        }
-
-                        // ng_gestionnaire_geolocalisation-region-add
-                        if ('/ng/geolocalisation/region/ajout' === $pathinfo) {
-                            return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\RegionController::addAction',  '_route' => 'ng_gestionnaire_geolocalisation-region-add',);
-                        }
-
+            if (0 === strpos($pathinfo, '/ng/geolocalisation')) {
+                if (0 === strpos($pathinfo, '/ng/geolocalisation/region')) {
+                    // ng_gestionnaire_geolocalisation-region-index
+                    if ('/ng/geolocalisation/region' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\RegionController::indexAction',  '_route' => 'ng_gestionnaire_geolocalisation-region-index',);
                     }
 
-                    elseif (0 === strpos($pathinfo, '/ng/geolocalisation/departement')) {
-                        // ng_gestionnaire_geolocalisation-dept-index
-                        if ('/ng/geolocalisation/departement' === $pathinfo) {
-                            return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\DepartementController::indexAction',  '_route' => 'ng_gestionnaire_geolocalisation-dept-index',);
-                        }
-
-                        // ng_gestionnaire_geolocalisation-dept-add
-                        if ('/ng/geolocalisation/departement/ajout' === $pathinfo) {
-                            return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\DepartementController::addAction',  '_route' => 'ng_gestionnaire_geolocalisation-dept-add',);
-                        }
-
-                    }
-
-                    elseif (0 === strpos($pathinfo, '/ng/geolocalisation/ville')) {
-                        // ng_gestionnaire_geolocalisation-ville-index
-                        if ('/ng/geolocalisation/ville' === $pathinfo) {
-                            return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\VilleController::indexAction',  '_route' => 'ng_gestionnaire_geolocalisation-ville-index',);
-                        }
-
-                        // ng_gestionnaire_geolocalisation-ville-add
-                        if ('/ng/geolocalisation/ville/ajout' === $pathinfo) {
-                            return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\VilleController::addAction',  '_route' => 'ng_gestionnaire_geolocalisation-ville-add',);
-                        }
-
-                    }
-
-                    // ng_gestionnaire_geolocalisation-carte
-                    if ('/ng/geolocalisation/carte' === $pathinfo) {
-                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ImmeubleController::mapAction',  '_route' => 'ng_gestionnaire_geolocalisation-carte',);
+                    // ng_gestionnaire_geolocalisation-region-add
+                    if ('/ng/geolocalisation/region/ajout' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\RegionController::addAction',  '_route' => 'ng_gestionnaire_geolocalisation-region-add',);
                     }
 
                 }
 
-                elseif (0 === strpos($pathinfo, '/ng/gestion/immeuble')) {
+                elseif (0 === strpos($pathinfo, '/ng/geolocalisation/departement')) {
+                    // ng_gestionnaire_geolocalisation-dept-index
+                    if ('/ng/geolocalisation/departement' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\DepartementController::indexAction',  '_route' => 'ng_gestionnaire_geolocalisation-dept-index',);
+                    }
+
+                    // ng_gestionnaire_geolocalisation-dept-add
+                    if ('/ng/geolocalisation/departement/ajout' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\DepartementController::addAction',  '_route' => 'ng_gestionnaire_geolocalisation-dept-add',);
+                    }
+
+                }
+
+                elseif (0 === strpos($pathinfo, '/ng/geolocalisation/ville')) {
+                    // ng_gestionnaire_geolocalisation-ville-index
+                    if ('/ng/geolocalisation/ville' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\VilleController::indexAction',  '_route' => 'ng_gestionnaire_geolocalisation-ville-index',);
+                    }
+
+                    // ng_gestionnaire_geolocalisation-ville-add
+                    if ('/ng/geolocalisation/ville/ajout' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\VilleController::addAction',  '_route' => 'ng_gestionnaire_geolocalisation-ville-add',);
+                    }
+
+                }
+
+                // ng_gestionnaire_geolocalisation-carte
+                if ('/ng/geolocalisation/carte' === $pathinfo) {
+                    return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ImmeubleController::mapAction',  '_route' => 'ng_gestionnaire_geolocalisation-carte',);
+                }
+
+            }
+
+            elseif (0 === strpos($pathinfo, '/ng/gestion')) {
+                if (0 === strpos($pathinfo, '/ng/gestion/immeuble')) {
                     // ng_gestionnaire_immeuble-index
                     if ('/ng/gestion/immeuble' === $pathinfo) {
                         return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ImmeubleController::indexAction',  '_route' => 'ng_gestionnaire_immeuble-index',);
@@ -224,6 +224,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-habitant-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\HabitantController::pdfAction',));
                     }
 
+                    // ng_gestionnaire_sinistre-pdf
+                    if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/sinistre') && preg_match('#^/ng/gestion/immeuble/pdf/sinistre/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::pdfAction',));
+                    }
+
                 }
 
                 elseif (0 === strpos($pathinfo, '/ng/gestion/proprietaire')) {
@@ -237,6 +242,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ProprietaireController::addAction',  '_route' => 'ng_gestionnaire_proprietaire-add',);
                     }
 
+                }
+
+                // ng_gestionnaire_sinistre-index
+                if (0 === strpos($pathinfo, '/ng/gestion/sinistre') && preg_match('#^/ng/gestion/sinistre/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-index')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::indexAction',));
                 }
 
             }

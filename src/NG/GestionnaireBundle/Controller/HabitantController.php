@@ -60,22 +60,22 @@ class HabitantController extends Controller
         $pdf->setTextColor(174,31,35);
         $pdf->Text(10, 70, "Civilite : ");
         $pdf->Text(10, 85, "Nom : ");
-        $pdf->Text(100, 85, "Prenom : ");
-        $pdf->Text(10, 100, "Date d'emmenagement : ");
+        $pdf->Text(100, 85, iconv('UTF-8', 'ISO-8859-2',"Prénom : "));
+        $pdf->Text(10, 100, iconv('UTF-8', 'ISO-8859-2',"Date d'émmenagement : "));
         $pdf->Text(10, 115, "Adresse mail : ");
-        $pdf->Text(10, 130, "Telephone : ");
+        $pdf->Text(10, 130, iconv('UTF-8', 'ISO-8859-2',"Téléphone : "));
         $pdf->Text(10, 145, "Immeuble : ");
         $pdf->Text(100, 145, "Lot : ");
         $pdf->Text(10, 160, "Membre du CS : ");
-        $pdf->Text(100, 160, "President du CS : ");
+        $pdf->Text(100, 160, iconv('UTF-8', 'ISO-8859-2',"Président du CS : "));
         $pdf->setTextColor(0,0,0);
         if( $hab->getSexe() == 0) {
             $pdf->Text(35, 70, "Mme.");
         }else{
             $pdf->Text(35, 70, "M.");
         }
-        $pdf->Text(30, 85, $hab->getNom());
-        $pdf->Text(128, 85, $hab->getPrenom());
+        $pdf->Text(30, 85, iconv('UTF-8', 'ISO-8859-2',$hab->getNom()));
+        $pdf->Text(128, 85, iconv('UTF-8', 'ISO-8859-2',$hab->getPrenom()));
         $pdf->Text(80, 100, $hab->getDateEmmenagement());
         $pdf->Text(52, 115, $hab->getEmail());
         $pdf->Text(45, 130, $hab->getTel());
