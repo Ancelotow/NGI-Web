@@ -58,6 +58,10 @@ ng_gestionnaire_immeuble-habitant-add:
     path:     /ng/gestion/immeuble/ajout/habitant/{code}
     defaults: { _controller: NGGestionnaireBundle:Habitant:add }
 
+ng_gestionnaire_immeuble-habitant-pdf:
+    path:     /ng/gestion/immeuble/pdf/habitant/{id}
+    defaults: { _controller: NGGestionnaireBundle:Habitant:pdf }
+
 ng_gestionnaire_immeuble-ag-add:
     path:     /ng/gestion/immeuble/ajout/ag/{code}
     defaults: { _controller: NGGestionnaireBundle:AG:add }
@@ -69,7 +73,3 @@ ng_gestionnaire_immeuble-cs-add:
 ng_gestionnaire_immeuble-sinistre-add:
     path:     /ng/gestion/immeuble/ajout/sinistre/{code}
     defaults: { _controller: NGGestionnaireBundle:Sinistre:add }
-
-ng_gestionnaire_pdf-test:
-    path:     /ng/pdf
-    defaults: { _controller: NGGestionnaireBundle:Default:pdf }

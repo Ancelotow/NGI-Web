@@ -219,6 +219,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ImmeubleController::uneCoproAction',));
                     }
 
+                    // ng_gestionnaire_immeuble-habitant-pdf
+                    if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/habitant') && preg_match('#^/ng/gestion/immeuble/pdf/habitant/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-habitant-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\HabitantController::pdfAction',));
+                    }
+
                 }
 
                 elseif (0 === strpos($pathinfo, '/ng/gestion/proprietaire')) {
@@ -234,11 +239,6 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
                 }
 
-            }
-
-            // ng_gestionnaire_pdf-test
-            if ('/ng/pdf' === $pathinfo) {
-                return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\DefaultController::pdfAction',  '_route' => 'ng_gestionnaire_pdf-test',);
             }
 
             // ng_administrateur_homepage

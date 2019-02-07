@@ -22,6 +22,7 @@
                                     <th scope="col">Téléphone</th>
                                     <th scope="col">Adresse mail</th>
                                     <th scope="col">Lot</th>
+                                    <th scope="col">PDF</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -44,6 +45,10 @@
                                             <td>{{ unH.tel }}</td>
                                             <td>{{ unH.email }}</td>
                                             <td>{{ unH.lot.num }}</td>
+                                            <td><a href="/ng/gestion/immeuble/pdf/habitant/{{ unH.id }}" target="_blank" class="btn btn-outline-danger btn-vsm">
+                                                    <img src="{{ asset('/image/pdf-logo.png') }}" alt="logo-pdf" width="15" />
+                                                </a>
+                                            </td>
                                         </tr>
                                     {% endfor %}
 
