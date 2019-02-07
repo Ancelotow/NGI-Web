@@ -78,6 +78,10 @@ ng_gestionnaire_sinistre-index:
     path:     /ng/gestion/sinistre/{code}
     defaults: { _controller: NGGestionnaireBundle:Sinistre:index }
 
+ng_gestionnaire_sinistre-liste:
+    path:     /ng/gestion/sinistre
+    defaults: { _controller: NGGestionnaireBundle:Sinistre:liste }
+
 ng_gestionnaire_sinistre-pdf:
     path:     /ng/gestion/immeuble/pdf/sinistre/{id}
     defaults: { _controller: NGGestionnaireBundle:Sinistre:pdf }

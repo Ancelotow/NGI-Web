@@ -179,4 +179,11 @@ class SinistreController extends Controller
         return new Response($pdf->Output());
     }
 
+    public function listeAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $sin = $em->getRepository("NGGestionnaireBundle:Sinistre")->findAll();
+        return $this->render('NGGestionnaireBundle:sinistre:liste.html.twig', array("sin"=>$sin));
+    }
+
 }

@@ -244,9 +244,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
                 }
 
-                // ng_gestionnaire_sinistre-index
-                if (0 === strpos($pathinfo, '/ng/gestion/sinistre') && preg_match('#^/ng/gestion/sinistre/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-index')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::indexAction',));
+                elseif (0 === strpos($pathinfo, '/ng/gestion/sinistre')) {
+                    // ng_gestionnaire_sinistre-index
+                    if (preg_match('#^/ng/gestion/sinistre/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-index')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::indexAction',));
+                    }
+
+                    // ng_gestionnaire_sinistre-liste
+                    if ('/ng/gestion/sinistre' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::listeAction',  '_route' => 'ng_gestionnaire_sinistre-liste',);
+                    }
+
                 }
 
             }
