@@ -25,4 +25,16 @@ class SinistreRepository extends \Doctrine\ORM\EntityRepository
         return $resultat;
     }
 
+    public function unSin($code)
+    {
+        $qb =$this->_em->createQueryBuilder();
+        $qb->select('s')
+            ->from('NGGestionnaireBundle:Sinistre', 's')
+            ->where('s.code = :code')
+            ->setParameter('code', $code);
+        $query = $qb->getQuery();
+        $resultat = $query->getOneOrNullResult();
+        return $resultat;
+    }
+
 }

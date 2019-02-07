@@ -28,11 +28,21 @@ class SinistreController extends Controller
         if(sizeof($lot) == 0){
             return $this->render('NGGestionnaireBundle:immeuble:sin-add.html.twig', array(
                 'form' => $form->createView(),
-                'error'=>true
+                'errorLot'=>true,
+                'errorCode'=>false,
             ));
         }
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
             $sin->setDate($_POST['dateSin']);
+            $em = $this->getDoctrine()->getManager();
+            $unSin = $em->getRepository("NGGestionnaireBundle:Sinistre")->unSin($sin->getCode());
+            if($unSin != null){
+                return $this->render('NGGestionnaireBundle:immeuble:sin-add.html.twig', array(
+                    'form' => $form->createView(),
+                    'errorLot'=>false,
+                    'errorCode'=>true,
+                ));
+            }
             $em = $this->getDoctrine()->getManager();
             $em->persist($sin);
             $em->flush();
@@ -44,7 +54,8 @@ class SinistreController extends Controller
 
         return $this->render('NGGestionnaireBundle:immeuble:sin-add.html.twig', array(
             'form' => $form->createView(),
-            'error'=>false
+            'errorLot'=>false,
+            'errorCode'=>false,
         ));
     }
 

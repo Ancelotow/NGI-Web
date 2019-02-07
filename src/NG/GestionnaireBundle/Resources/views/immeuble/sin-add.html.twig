@@ -9,9 +9,15 @@
 
             <h4>Ajouter un Sinisre</h4><br/>
 
-            {% if error == true %}
+            {% if errorLot == true %}
                 <div class="alert alert-warning">
-                    Il n'éxiste aucun lot sur cette copropriété
+                    Il n'éxiste aucun lot sur cette copropriété.
+                </div>
+            {% endif %}
+
+            {% if errorCode == true %}
+                <div class="alert alert-warning">
+                    Ce code sinistre existe déjâ.
                 </div>
             {% endif %}
 

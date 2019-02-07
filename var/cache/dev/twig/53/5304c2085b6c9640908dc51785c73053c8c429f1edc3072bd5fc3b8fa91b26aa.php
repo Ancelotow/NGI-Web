@@ -22,47 +22,47 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d594f61dd6c5b6c51699bab1fb805703cfbd0b4faa5cf273cc96780c92ddb0c1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d594f61dd6c5b6c51699bab1fb805703cfbd0b4faa5cf273cc96780c92ddb0c1->enter($__internal_d594f61dd6c5b6c51699bab1fb805703cfbd0b4faa5cf273cc96780c92ddb0c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:sin-add.html.twig"));
+        $__internal_c393f7e74834b6bd6719fa192a5a0ac167ceec9d1128cfcf1e9ee34930cd74f0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c393f7e74834b6bd6719fa192a5a0ac167ceec9d1128cfcf1e9ee34930cd74f0->enter($__internal_c393f7e74834b6bd6719fa192a5a0ac167ceec9d1128cfcf1e9ee34930cd74f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:sin-add.html.twig"));
 
-        $__internal_410995ab21ea93869fdbdb575329568eb141c1dc295d89f48504a315d5ce4ce3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_410995ab21ea93869fdbdb575329568eb141c1dc295d89f48504a315d5ce4ce3->enter($__internal_410995ab21ea93869fdbdb575329568eb141c1dc295d89f48504a315d5ce4ce3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:sin-add.html.twig"));
+        $__internal_2c1c0eab1fde370c8b928f0ab2323241465aaf6a94cae768494497ccdd25e45f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2c1c0eab1fde370c8b928f0ab2323241465aaf6a94cae768494497ccdd25e45f->enter($__internal_2c1c0eab1fde370c8b928f0ab2323241465aaf6a94cae768494497ccdd25e45f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:immeuble:sin-add.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d594f61dd6c5b6c51699bab1fb805703cfbd0b4faa5cf273cc96780c92ddb0c1->leave($__internal_d594f61dd6c5b6c51699bab1fb805703cfbd0b4faa5cf273cc96780c92ddb0c1_prof);
+        $__internal_c393f7e74834b6bd6719fa192a5a0ac167ceec9d1128cfcf1e9ee34930cd74f0->leave($__internal_c393f7e74834b6bd6719fa192a5a0ac167ceec9d1128cfcf1e9ee34930cd74f0_prof);
 
         
-        $__internal_410995ab21ea93869fdbdb575329568eb141c1dc295d89f48504a315d5ce4ce3->leave($__internal_410995ab21ea93869fdbdb575329568eb141c1dc295d89f48504a315d5ce4ce3_prof);
+        $__internal_2c1c0eab1fde370c8b928f0ab2323241465aaf6a94cae768494497ccdd25e45f->leave($__internal_2c1c0eab1fde370c8b928f0ab2323241465aaf6a94cae768494497ccdd25e45f_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_e4d5ee540e6ec6cfc45eed6d1cefa0987734762debff35e9b153bb961c6474f9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e4d5ee540e6ec6cfc45eed6d1cefa0987734762debff35e9b153bb961c6474f9->enter($__internal_e4d5ee540e6ec6cfc45eed6d1cefa0987734762debff35e9b153bb961c6474f9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_2ffc1b302c3d44ccdeb2ce61e08c7d1b63a6d8724e7522a2aebe3cf3914a3e3d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2ffc1b302c3d44ccdeb2ce61e08c7d1b63a6d8724e7522a2aebe3cf3914a3e3d->enter($__internal_2ffc1b302c3d44ccdeb2ce61e08c7d1b63a6d8724e7522a2aebe3cf3914a3e3d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_ed90ed6a5af63bb7723c898ab8eaa7da4689c1c7a1f9c684a0ef51490a1ec4d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ed90ed6a5af63bb7723c898ab8eaa7da4689c1c7a1f9c684a0ef51490a1ec4d7->enter($__internal_ed90ed6a5af63bb7723c898ab8eaa7da4689c1c7a1f9c684a0ef51490a1ec4d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_12b52de01cfd9e44211d49fbd203ea6e9ca8c93f225e51a0e26ddfe8539a65a6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_12b52de01cfd9e44211d49fbd203ea6e9ca8c93f225e51a0e26ddfe8539a65a6->enter($__internal_12b52de01cfd9e44211d49fbd203ea6e9ca8c93f225e51a0e26ddfe8539a65a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Sinistre";
         
-        $__internal_ed90ed6a5af63bb7723c898ab8eaa7da4689c1c7a1f9c684a0ef51490a1ec4d7->leave($__internal_ed90ed6a5af63bb7723c898ab8eaa7da4689c1c7a1f9c684a0ef51490a1ec4d7_prof);
+        $__internal_12b52de01cfd9e44211d49fbd203ea6e9ca8c93f225e51a0e26ddfe8539a65a6->leave($__internal_12b52de01cfd9e44211d49fbd203ea6e9ca8c93f225e51a0e26ddfe8539a65a6_prof);
 
         
-        $__internal_e4d5ee540e6ec6cfc45eed6d1cefa0987734762debff35e9b153bb961c6474f9->leave($__internal_e4d5ee540e6ec6cfc45eed6d1cefa0987734762debff35e9b153bb961c6474f9_prof);
+        $__internal_2ffc1b302c3d44ccdeb2ce61e08c7d1b63a6d8724e7522a2aebe3cf3914a3e3d->leave($__internal_2ffc1b302c3d44ccdeb2ce61e08c7d1b63a6d8724e7522a2aebe3cf3914a3e3d_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_7bee5f98d0eb65449717b33e2dbb8cfa567629adf7baa78da24f336a18f02d3c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7bee5f98d0eb65449717b33e2dbb8cfa567629adf7baa78da24f336a18f02d3c->enter($__internal_7bee5f98d0eb65449717b33e2dbb8cfa567629adf7baa78da24f336a18f02d3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8f39095412f678bf8085ace303256d4fd4dfc348c90a4b74f0a1f5bb8906ac49 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8f39095412f678bf8085ace303256d4fd4dfc348c90a4b74f0a1f5bb8906ac49->enter($__internal_8f39095412f678bf8085ace303256d4fd4dfc348c90a4b74f0a1f5bb8906ac49_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_f88d8ee4e02270888a0bf207a72b6f62a59c6337d651bf23285d6e33ab0f7e5a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f88d8ee4e02270888a0bf207a72b6f62a59c6337d651bf23285d6e33ab0f7e5a->enter($__internal_f88d8ee4e02270888a0bf207a72b6f62a59c6337d651bf23285d6e33ab0f7e5a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_54df81d52bcfe25f2da28942b708cc4cecccb49ad0c4d620bc3b9ab8574049b4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_54df81d52bcfe25f2da28942b708cc4cecccb49ad0c4d620bc3b9ab8574049b4->enter($__internal_54df81d52bcfe25f2da28942b708cc4cecccb49ad0c4d620bc3b9ab8574049b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"container\">
@@ -73,10 +73,10 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
 
             ";
         // line 12
-        if ((($context["error"] ?? $this->getContext($context, "error")) == true)) {
+        if ((($context["errorLot"] ?? $this->getContext($context, "errorLot")) == true)) {
             // line 13
             echo "                <div class=\"alert alert-warning\">
-                    Il n'éxiste aucun lot sur cette copropriété
+                    Il n'éxiste aucun lot sur cette copropriété.
                 </div>
             ";
         }
@@ -84,26 +84,37 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
         echo "
             ";
         // line 18
+        if ((($context["errorCode"] ?? $this->getContext($context, "errorCode")) == true)) {
+            // line 19
+            echo "                <div class=\"alert alert-warning\">
+                    Ce code sinistre existe déjâ.
+                </div>
+            ";
+        }
+        // line 23
+        echo "
+            ";
+        // line 24
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start', array("method" => "POST"));
         echo "
                 <div class=\"col-md-6 mb-3\">
                     ";
-        // line 20
+        // line 26
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "code", array()), 'label');
         echo "
                     ";
-        // line 21
+        // line 27
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "code", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                 </div>
 
                 <div class=\"col-md-6 mb-3\">
                     ";
-        // line 25
+        // line 31
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "type", array()), 'label');
         echo "
                     ";
-        // line 26
+        // line 32
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "type", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                 </div>
@@ -115,22 +126,22 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
 
                 <div class=\"col-md-6 mb-3\">
                     ";
-        // line 35
+        // line 41
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "lot", array()), 'label');
         echo "
                     ";
-        // line 36
+        // line 42
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "lot", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                 </div>
 
                 ";
-        // line 39
+        // line 45
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "valid", array()), 'widget', array("attr" => array("class" => "btn btn-outline-ngi")));
         echo "
 
             ";
-        // line 41
+        // line 47
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
 
@@ -138,10 +149,10 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
     </div>
 ";
         
-        $__internal_f88d8ee4e02270888a0bf207a72b6f62a59c6337d651bf23285d6e33ab0f7e5a->leave($__internal_f88d8ee4e02270888a0bf207a72b6f62a59c6337d651bf23285d6e33ab0f7e5a_prof);
+        $__internal_54df81d52bcfe25f2da28942b708cc4cecccb49ad0c4d620bc3b9ab8574049b4->leave($__internal_54df81d52bcfe25f2da28942b708cc4cecccb49ad0c4d620bc3b9ab8574049b4_prof);
 
         
-        $__internal_7bee5f98d0eb65449717b33e2dbb8cfa567629adf7baa78da24f336a18f02d3c->leave($__internal_7bee5f98d0eb65449717b33e2dbb8cfa567629adf7baa78da24f336a18f02d3c_prof);
+        $__internal_8f39095412f678bf8085ace303256d4fd4dfc348c90a4b74f0a1f5bb8906ac49->leave($__internal_8f39095412f678bf8085ace303256d4fd4dfc348c90a4b74f0a1f5bb8906ac49_prof);
 
     }
 
@@ -157,7 +168,7 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
 
     public function getDebugInfo()
     {
-        return array (  134 => 41,  129 => 39,  123 => 36,  119 => 35,  107 => 26,  103 => 25,  96 => 21,  92 => 20,  87 => 18,  84 => 17,  78 => 13,  76 => 12,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  145 => 47,  140 => 45,  134 => 42,  130 => 41,  118 => 32,  114 => 31,  107 => 27,  103 => 26,  98 => 24,  95 => 23,  89 => 19,  87 => 18,  84 => 17,  78 => 13,  76 => 12,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -181,9 +192,15 @@ class __TwigTemplate_73724759a857cf2a4d7f6a75a0548b3256e98a5574e70e6b39afb66c147
 
             <h4>Ajouter un Sinisre</h4><br/>
 
-            {% if error == true %}
+            {% if errorLot == true %}
                 <div class=\"alert alert-warning\">
-                    Il n'éxiste aucun lot sur cette copropriété
+                    Il n'éxiste aucun lot sur cette copropriété.
+                </div>
+            {% endif %}
+
+            {% if errorCode == true %}
+                <div class=\"alert alert-warning\">
+                    Ce code sinistre existe déjâ.
                 </div>
             {% endif %}
 
