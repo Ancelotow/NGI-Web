@@ -255,6 +255,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_proprietaire-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ProprietaireController::pdfAction',));
                     }
 
+                    // ng_gestionnaire_proprietaire-consult
+                    if (preg_match('#^/ng/gestion/proprietaire/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_proprietaire-consult')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ProprietaireController::consultAction',));
+                    }
+
                 }
 
                 elseif (0 === strpos($pathinfo, '/ng/gestion/sinistre')) {

@@ -46,6 +46,10 @@ ng_gestionnaire_proprietaire-pdf:
     path:     /ng/gestion/proprietaire/pdf/{id}
     defaults: { _controller: NGGestionnaireBundle:Proprietaire:pdf }
 
+ng_gestionnaire_proprietaire-consult:
+    path:     /ng/gestion/proprietaire/{id}
+    defaults: { _controller: NGGestionnaireBundle:Proprietaire:consult }
+
 ng_gestionnaire_immeuble:
     path:     /ng/gestion/immeuble/code/{code}
     defaults: { _controller: NGGestionnaireBundle:Immeuble:uneCopro }

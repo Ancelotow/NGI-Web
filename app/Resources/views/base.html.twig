@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html oncontextmenu="return false">
     <head>
         <meta charset="UTF-8" />
         <title>NG | {% block title %}{% endblock %}</title>
@@ -14,12 +14,29 @@
         {% block logo %}
             <link rel="icon" type="image/x-icon" href="{{ asset('image/logo.gif') }}" />
         {% endblock %}
+        <script>
+            window.onkeydown=function(event){
+                var e=event||window.event;
+                if(e.keyCode===85 && e.ctrlKey===true){
+                    e.stopPropagation();
+                    e.preventDefault();
+                    e.returnValue = false;
+                    return false;
+                }
+                else if(e.keyCode===115 && e.ctrlKey===true){
+                    e.stopPropagation();
+                    e.preventDefault();
+                    e.returnValue = false;
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         {% block navbar %}
             <nav class="navbar navbar-expand-lg navbar-dark bg-ngi">
                 <a class="navbar-brand" href="/ng/">
-                    <img src="{{ asset('image/logo2.gif') }}" width="30" class="d-inline-block align-top" alt="">
+                    <img  src="{{ asset('image/logo2.gif') }}" width="30" class="d-inline-block align-top" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

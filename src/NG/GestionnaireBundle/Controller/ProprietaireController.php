@@ -117,10 +117,10 @@ class ProprietaireController extends Controller
     public function pdfAction($id){
         $em = $this->getDoctrine()->getManager();
         $prop = $em->getRepository("NGGestionnaireBundle:Proprietaire")->findOneBy(array('id'=>$id));
-        $lots = $em->getRepository("NGGestionnaireBundle:Lot")->LotProprietaire($id);
         if($prop == null){
             return $this->render("NGAdministrateurBundle:Default:errorProp.html.twig");
         }
+        $lots = $em->getRepository("NGGestionnaireBundle:Lot")->LotProprietaire($id);
         $logo = $this->container->getParameter('kernel.root_dir').'/../web/image/logo.jpg';
         $pdf = new \FPDF();
         $pdf->AddPage();
@@ -170,6 +170,16 @@ class ProprietaireController extends Controller
             $i = $i + 6;
         }
         return new Response($pdf->Output());
+    }
+
+    public function consultAction($id){
+        $em = $this->getDoctrine()->getManager();
+        $prop = $em->getRepository("NGGestionnaireBundle:Proprietaire")->findOneBy(array('id'=>$id));
+        if($prop == null){
+            return $this->render("NGAdministrateurBundle:Default:errorProp.html.twig");
+        }
+        $lots = $em->getRepository("NGGestionnaireBundle:Lot")->LotProprietaire($id);
+        return $this->render("NGGestionnaireBundle:proprietaire:consult.html.twig");
     }
 
 }

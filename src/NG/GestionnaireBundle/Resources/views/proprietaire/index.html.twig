@@ -33,7 +33,7 @@
                         <td>{{ unP.email }}</td>
                         <td>{{ unP.adresse }}</td>
                         <td>{{ unP.ville.nom }}</td>
-                        <td><a href="#" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
+                        <td><a href="/ng/gestion/proprietaire/{{ unP.id }}" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
