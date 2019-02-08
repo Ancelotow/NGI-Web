@@ -126,6 +126,7 @@
                                         <th scope="col">Prix</th>
                                         <th scope="col">Propriétaire</th>
                                         <th scope="col">Type</th>
+                                        <th scope="col">PDF</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -142,6 +143,11 @@
                                                 <td>M. {{ unL.proprietaire.nom }}</td>
                                             {% endif %}
                                             <td>{{ unL.typeLot.nom }}</td>
+                                            <td>
+                                                <a href="/ng/gestion/immeuble/pdf/lot/{{ unL.id }}" target="_blank" class="btn btn-outline-danger btn-vsm">
+                                                    <img src="{{ asset('/image/pdf-logo.png') }}" alt="logo-pdf" width="15" />
+                                                </a>
+                                            </td>
                                         </tr>
                                     {% endfor %}
                                 </tbody>
@@ -187,7 +193,7 @@
                                             <a href="/ng/gestion/sinistre/{{ unS.code }}" class="btn btn-outline-success btn-vsm">{{ 'consulter'|upper }}</a>
                                         </td>
                                         <td>
-                                            <a href="/ng/gestion/immeuble/pdf/sinsitre/{{ unS.id }}" target="_blank" class="btn btn-outline-danger btn-vsm">
+                                            <a href="/ng/gestion/immeuble/pdf/sinistre/{{ unS.id }}" target="_blank" class="btn btn-outline-danger btn-vsm">
                                                 <img src="{{ asset('/image/pdf-logo.png') }}" alt="logo-pdf" width="15" />
                                             </a>
                                         </td>

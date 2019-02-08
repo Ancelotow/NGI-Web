@@ -219,14 +219,22 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ImmeubleController::uneCoproAction',));
                     }
 
-                    // ng_gestionnaire_immeuble-habitant-pdf
-                    if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/habitant') && preg_match('#^/ng/gestion/immeuble/pdf/habitant/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-habitant-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\HabitantController::pdfAction',));
-                    }
+                    if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf')) {
+                        // ng_gestionnaire_immeuble-lot-pdf
+                        if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/lot') && preg_match('#^/ng/gestion/immeuble/pdf/lot/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-lot-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\LotController::pdfAction',));
+                        }
 
-                    // ng_gestionnaire_sinistre-pdf
-                    if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/sinistre') && preg_match('#^/ng/gestion/immeuble/pdf/sinistre/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::pdfAction',));
+                        // ng_gestionnaire_immeuble-habitant-pdf
+                        if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/habitant') && preg_match('#^/ng/gestion/immeuble/pdf/habitant/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-habitant-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\HabitantController::pdfAction',));
+                        }
+
+                        // ng_gestionnaire_sinistre-pdf
+                        if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/sinistre') && preg_match('#^/ng/gestion/immeuble/pdf/sinistre/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::pdfAction',));
+                        }
+
                     }
 
                 }
