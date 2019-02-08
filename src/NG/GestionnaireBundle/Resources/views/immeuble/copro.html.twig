@@ -80,6 +80,7 @@
                                         <th scope="col">Téléphone</th>
                                         <th scope="col">Adresse mail</th>
                                         <th scope="col">Adresse</th>
+                                        <th scope="col">PDF</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -94,6 +95,11 @@
                                             <td>{{ unP.proprietaire.tel }}</td>
                                             <td>{{ unP.proprietaire.email }}</td>
                                             <td>{{ unP.proprietaire.adresse }}, {{ unP.proprietaire.ville.cp }} {{ unP.proprietaire.ville.nom }}</td>
+                                            <td>
+                                                <a href="/ng/gestion/proprietaire/pdf/{{ unP.proprietaire.id }}" target="_blank" class="btn btn-outline-danger btn-vsm">
+                                                    <img src="{{ asset('/image/pdf-logo.png') }}" alt="logo-pdf" width="15" />
+                                                </a>
+                                            </td>
                                         </tr>
                                     {% endfor %}
                                 </tbody>

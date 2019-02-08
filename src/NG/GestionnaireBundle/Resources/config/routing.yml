@@ -42,6 +42,10 @@ ng_gestionnaire_proprietaire-add:
     path:     /ng/gestion/proprietaire/ajout
     defaults: { _controller: NGGestionnaireBundle:Proprietaire:add }
 
+ng_gestionnaire_proprietaire-pdf:
+    path:     /ng/gestion/proprietaire/pdf/{id}
+    defaults: { _controller: NGGestionnaireBundle:Proprietaire:pdf }
+
 ng_gestionnaire_immeuble:
     path:     /ng/gestion/immeuble/code/{code}
     defaults: { _controller: NGGestionnaireBundle:Immeuble:uneCopro }

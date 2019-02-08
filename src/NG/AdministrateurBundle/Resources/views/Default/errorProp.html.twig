@@ -1,0 +1,14 @@
+{% extends':administrateur:base.html.twig' %}
+
+{% block title %}Erreur 500{% endblock %}
+
+{% block navbar %}{{ 'erreur 500'|upper }}{% endblock %}
+
+{% block body %}
+
+    <center>
+        <h4>Erreur 500 : Ce propriétaire n'éxiste pas.</h4><br/>
+        <a href="/ng/gestion/proprietaire" class="btn btn-outline-ngi">{{ "retour à la liste des propriétaire"|upper }}</a>
+    </center>
+
+{% endblock %}

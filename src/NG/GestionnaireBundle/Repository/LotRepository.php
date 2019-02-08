@@ -62,5 +62,18 @@ class LotRepository extends \Doctrine\ORM\EntityRepository
         return $resultat;
     }
 
+    public function LotProprietaire($prop)
+    {
+        $qb =$this->_em->createQueryBuilder();
+        $qb->select('l')
+            ->from('NGGestionnaireBundle:Lot', 'l')
+            ->where('l.proprietaire = :prop')
+            ->orderBy('l.copro')
+            ->setParameter('prop', $prop);
+        $query = $qb->getQuery();
+        $resultat = $query->getResult();
+        return $resultat;
+    }
+
 
 }

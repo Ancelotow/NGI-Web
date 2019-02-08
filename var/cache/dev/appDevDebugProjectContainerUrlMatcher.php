@@ -250,6 +250,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ProprietaireController::addAction',  '_route' => 'ng_gestionnaire_proprietaire-add',);
                     }
 
+                    // ng_gestionnaire_proprietaire-pdf
+                    if (0 === strpos($pathinfo, '/ng/gestion/proprietaire/pdf') && preg_match('#^/ng/gestion/proprietaire/pdf/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_proprietaire-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ProprietaireController::pdfAction',));
+                    }
+
                 }
 
                 elseif (0 === strpos($pathinfo, '/ng/gestion/sinistre')) {
