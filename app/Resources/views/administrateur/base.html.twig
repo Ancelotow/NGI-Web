@@ -14,6 +14,17 @@
         {% block logo %}
             <link rel="icon" type="image/x-icon" href="{{ asset('image/logo.gif') }}" />
         {% endblock %}
+        <script>
+            window.onkeydown=function(event){
+                var e=event||window.event;
+                if((e.keyCode===85 && e.ctrlKey===true)||(e.keyCode===83 && e.ctrlKey===true)||(e.keyCode===73 && e.keyCode===16 && e.ctrlKey===true)){
+                    e.stopPropagation();
+                    e.preventDefault();
+                    e.returnValue = false;
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-ngi">

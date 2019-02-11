@@ -17,13 +17,7 @@
         <script>
             window.onkeydown=function(event){
                 var e=event||window.event;
-                if(e.keyCode===85 && e.ctrlKey===true){
-                    e.stopPropagation();
-                    e.preventDefault();
-                    e.returnValue = false;
-                    return false;
-                }
-                else if(e.keyCode===115 && e.ctrlKey===true){
+                if((e.keyCode===85 && e.ctrlKey===true)||(e.keyCode===83 && e.ctrlKey===true)||(e.keyCode===73 && e.keyCode===16 && e.ctrlKey===true)){
                     e.stopPropagation();
                     e.preventDefault();
                     e.returnValue = false;
