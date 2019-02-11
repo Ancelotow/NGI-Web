@@ -123,7 +123,7 @@ class LotController extends Controller
             $pdf->MultiCell(50,6,iconv('UTF-8', 'ISO-8859-2',$unS->getDate()),1);
             $i = $i + 6;
         }
-        return new Response($pdf->Output());
+        return new Response($pdf->Output("Lot_".$lot->getCopro()->getCode()."-".$lot->getNum(), 'I'));
     }
 
 }

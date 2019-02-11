@@ -92,7 +92,7 @@ class HabitantController extends Controller
             $pdf->Text(150, 160, "Non");
         }
         $pdf->setTitle($hab->getNom()." ".$hab->getPrenom());
-        return new Response($pdf->Output());
+        return new Response($pdf->Output(iconv('UTF-8', 'ISO-8859-2',"Habitant_".$hab->getNom()."-".$hab->getPrenom()), 'I'));
     }
 
 }

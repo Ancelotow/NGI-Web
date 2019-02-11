@@ -5,5 +5,66 @@
 {% block body %}
     <div class="container">
 
+        {% if prop.sexe == 0 %}
+            <h1>Mme. {{ prop.nom }} {{ prop.prenom }}</h1>
+        {% else %}
+            <h1>M. {{ prop.nom }} {{ prop.prenom }}</h1>
+        {% endif %}<br/>
+        <a href="/ng/gestion/proprietaire/pdf/{{ prop.id }}" target="_blank" class="btn btn-outline-danger">Voir le PDF</a><br/><br/>
+
+        <div class="row">
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">Téléphone : </strong>{{ prop.tel }}</h4>
+            </div>
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">Adresse mail : </strong>{{ prop.email }}</h4>
+            </div>
+        </div><br/>
+
+        <div class="row">
+            <div class="col-4 col-sm-12">
+                <h4><strong style="color:#AE1F23;">Adresse : </strong>{{ prop.adresse }}, {{ prop.ville.cp }} {{ prop.ville.nom }}</h4>
+            </div>
+        </div><br/><br/>
+
+        <h4>Les lots</h4>
+        {% if lots|length == 0 %}
+            <div class="alert alert-warning">
+                {{ prop.prenom }} {{ prop.nom }} ne possède aucun lot.
+            </div>
+        {% else %}
+            <table class="table table-hover table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Numéro du lot</th>
+                    <th scope="col">{{ "étage"|upper }}</th>
+                    <th scope="col">Surface</th>
+                    <th scope="col">Carezze</th>
+                    <th scope="col">Prix</th>
+                    <th scope="col">Type du lot</th>
+                    <th scope="col">PDF</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for unL in lots %}
+                    <tr>
+                        <td>{{ unL.num }}</td>
+                        <td>{{ unL.etage }}</td>
+                        <td>{{ unL.surface }} m²</td>
+                        <td>{{ unL.carezze }} m²</td>
+                        <td>{{ unL.prix }} €</td>
+                        <td>{{ unL.typeLot.nom }}</td>
+                        <td>
+                            <a href="/ng/gestion/immeuble/pdf/lot/{{ unL.id }}" target="_blank" class="btn btn-outline-danger">
+                                <img src="{{ asset('/image/pdf-logo.png') }}" alt="logo-pdf" width="25" />
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table><br/>
+        {% endif %}
+
+
     </div>
 {% endblock %}
