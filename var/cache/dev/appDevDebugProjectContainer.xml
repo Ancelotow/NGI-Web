@@ -657,7 +657,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>9jXT4p3UI2EVNZijpM2HCA</argument>
+      <argument>ZyCQmKk-FgXaIC7VPHWqSm</argument>
       <argument>C:\wamp64\www\NGI-Web\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -667,7 +667,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>9jXT4p3UI2EVNZijpM2HCA</argument>
+      <argument>ZyCQmKk-FgXaIC7VPHWqSm</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -1890,13 +1890,6 @@
         </argument>
         <argument>null</argument>
       </call>
-      <call method="add">
-        <argument type="service" id="security.request_matcher.20cfc2409fc29529952e844750ff1c7434c4e2fba7a00f77b213d249a5d71c86d719a1be"/>
-        <argument type="collection">
-          <argument>ROLE_SUPER_ADMIN</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
     </service>
     <service id="security.context_listener" class="Symfony\Component\Security\Http\Firewall\ContextListener" public="false">
       <tag name="monolog.logger" channel="security"/>
@@ -2299,12 +2292,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5c5d8240b373b2.34328083</argument>
+      <argument>5c618768da0021.94027856</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5c5d8240b373b2.34328083</argument>
+      <argument>5c618768da0021.94027856</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -2346,9 +2339,6 @@
     </service>
     <service id="security.request_matcher.b5621830cf440d864643fdb8d3cfd512cea6b1d2e577e4b30d4341102e2d500197b9b29e" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
       <argument>^/ng/</argument>
-    </service>
-    <service id="security.request_matcher.20cfc2409fc29529952e844750ff1c7434c4e2fba7a00f77b213d249a5d71c86d719a1be" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/ng/geolocalisation/region</argument>
     </service>
     <service id="security.console.user_password_encoder_command" class="Symfony\Bundle\SecurityBundle\Command\UserPasswordEncoderCommand" public="false">
       <tag name="console.command"/>
@@ -3749,7 +3739,7 @@
     <service id="cache.system.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>hZSk9hQeQz</argument>
       <argument>0</argument>
-      <argument>9jXT4p3UI2EVNZijpM2HCA</argument>
+      <argument>ZyCQmKk-FgXaIC7VPHWqSm</argument>
       <argument>C:\wamp64\www\NGI-Web\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3757,7 +3747,7 @@
     <service id="cache.validator.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>vE4Z9L05nO</argument>
       <argument>0</argument>
-      <argument>9jXT4p3UI2EVNZijpM2HCA</argument>
+      <argument>ZyCQmKk-FgXaIC7VPHWqSm</argument>
       <argument>C:\wamp64\www\NGI-Web\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3765,7 +3755,7 @@
     <service id="cache.serializer.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>vI7kyfmcCx</argument>
       <argument>0</argument>
-      <argument>9jXT4p3UI2EVNZijpM2HCA</argument>
+      <argument>ZyCQmKk-FgXaIC7VPHWqSm</argument>
       <argument>C:\wamp64\www\NGI-Web\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3773,7 +3763,7 @@
     <service id="cache.annotations.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>GKUmjx+Xuh</argument>
       <argument>0</argument>
-      <argument>9jXT4p3UI2EVNZijpM2HCA</argument>
+      <argument>ZyCQmKk-FgXaIC7VPHWqSm</argument>
       <argument>C:\wamp64\www\NGI-Web\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

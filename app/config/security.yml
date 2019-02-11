@@ -34,4 +34,3 @@ security:
         - { path: ^/register, role: ROLE_ADMIN }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/ng/, role: ROLE_USER }
-        - { path: ^/ng/geolocalisation/region, role: ROLE_SUPER_ADMIN }

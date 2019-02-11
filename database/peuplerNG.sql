@@ -1,16 +1,24 @@
 /*--------------------------*/
-/*	TABLE : ng_immobilier 	*/
+/*	TABLE : Poste 	        */
 /*--------------------------*/
 
-insert into ng_immobilier values( 52208659400036 , "N.G Immobilier" , "13 rue de Sévigné" , "PARIS 4" , 0142771210 , "G 10-038" , "NICOLAS" , "Gaële" , '2010-04-28' );
+insert into poste values(1, "ROLE_COMPTABLE", "Comptable");
+insert into poste values(2, "ROLE_GESTIONNAIRE", "Gestionnaire");
+insert into poste values(3, "ROLE_ADMIN", "Gérant");
+insert into poste values(4, "ROLE_ADMIN", "Administrateur");
+insert into poste values(5, "ROLE_GESTIONNAIRE", "Assistant gestionnaire");
+insert into poste values(6, "ROLE_COMPTABLE", "Assistant comptable");
+
 
 /*--------------------------*/
-/*	TABLE : employer		*/
+/*	TABLE : Type_Lot		     */
 /*--------------------------*/
 
-insert into employer values( 01 , "NICOLAS" , "Gaële" , 0670118088 , "" , "Gérante" , '2010-04-28' , 52208659400036 );
-insert into employer values( 02 , "CHEVALLIER" , "Rémy" , 0687794388 , "r.chevallier.ngimmobilier@gmail.com" , "Gestionnaire" , "" , 52208659400036 );
-insert into employer values( 03 , "" , "Estelle" , 0 , "" , "Assiante gestionnaire" , '2000-01-01' , 52208659400036 );
-insert into employer values( 04 , "" ; "" , 0 , "" , "Comptable" , '2000-01-01' , 52208659400036 );
-insert into employer values( 05 , "PHAN" , "Isabelle" , "Responsable des ventes" , '2000-01-01' , 52208659400036 );
+insert into type_lot values(1, "Logement");
+insert into type_lot values(2, "Boutique");
+insert into type_lot values(3, "Bureau");
+insert into type_lot values(4, "Parking");
+insert into type_lot values(5, "Cave");
+
+
 

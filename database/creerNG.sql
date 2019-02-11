@@ -1,4 +1,4 @@
-﻿# ©Copyright 2018 IDAC, tout droit réservé
+﻿# ©Copyright 2018 Ancelotow, tout droit réservé
 # License A001, N.G Immobilier
 
 #-----------------------------------------------------------------------
@@ -300,6 +300,6 @@ create table Reunir(
 
 
 #Fin du script de création de la Base de Données de N.G Immobilier
-# ©Copyright 2018 IDAC, tout droit réservé
+# ©Copyright 2018 Ancelotow, tout droit réservé
 
 

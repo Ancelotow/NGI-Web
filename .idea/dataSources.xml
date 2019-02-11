@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ngi-db@localhost" uuid="486c6290-ddf1-4907-8ad4-ee1c9d20cc58">
+    <data-source source="LOCAL" name="ngi-db@localhost" uuid="613ba493-8a98-4ce5-9738-141a1e8e49de">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
