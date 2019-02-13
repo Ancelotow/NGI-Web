@@ -93,9 +93,9 @@ class LotController extends Controller
         $pdf->Text(43, 85, $lot->getCopro()->getCode());
         $pdf->Text(100, 85, $lot->getNum());
         $pdf->Text(162, 85, iconv('UTF-8', 'ISO-8859-2',$lot->getEtage()));
-        $pdf->Text(38, 100, $lot->GetSurface());
-        $pdf->Text(113, 100, $lot->getCarezze());
-        $pdf->Text(168, 100, $lot->getPrix());
+        $pdf->Text(38, 100, utf8_decode($lot->GetSurface()."m²"));
+        $pdf->Text(113, 100, utf8_decode($lot->getCarezze()."m²"));
+        $pdf->Text(168, 100, iconv("UTF-8", "CP1252",$lot->getPrix()."€"));
         if( $lot->getProprietaire()->getSexe() == 0) {
             $pdf->Text(50, 115, iconv('UTF-8', 'ISO-8859-2', "Mme. ".$lot->getProprietaire()->getNom()." ".$lot->getProprietaire()->getPrenom()));
         }else{
@@ -123,7 +123,7 @@ class LotController extends Controller
             $pdf->MultiCell(50,6,iconv('UTF-8', 'ISO-8859-2',$unS->getDate()),1);
             $i = $i + 6;
         }
-        return new Response($pdf->Output("Lot_".$lot->getCopro()->getCode()."-".$lot->getNum(), 'I'));
+        return new Response($pdf->Output("Lot_".$lot->getCopro()->getCode()."-".$lot->getNum().".pdf", 'I'));
     }
 
 }

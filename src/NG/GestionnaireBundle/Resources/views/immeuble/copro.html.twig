@@ -6,8 +6,13 @@
     <div class="container-fluid">
         <center>
             <div class="row">
-                <div class="col-sm"><h2>{{ copro.code }} : {{ copro.adresse }}</h2></div><br/>
-            </div>
+                <div class="col-sm">
+                    <h2>{{ copro.code }} : {{ copro.adresse }}</h2>
+                    <a href="/ng/gestion/immeuble/pdf/{{ copro.id }}" target="_blank" class="btn btn-outline-danger" >
+                        {{ "voir le pdf"|upper }}
+                    </a>
+                </div>
+            </div><br/><br/><br/>
             <div class="row">
                 <div class="col-6 col-sm-4">
                     <h4>Habitants</h4>

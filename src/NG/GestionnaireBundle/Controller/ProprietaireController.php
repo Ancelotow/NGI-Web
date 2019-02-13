@@ -169,7 +169,7 @@ class ProprietaireController extends Controller
             $pdf->MultiCell(50,6,iconv('UTF-8', 'ISO-8859-2',$unL->getEtage()),1);
             $i = $i + 6;
         }
-        return new Response($pdf->Output(iconv('UTF-8', 'ISO-8859-2',"Proprietaire_".$prop->getNom()."-".$prop->getPrenom()), 'I'));
+        return new Response($pdf->Output(iconv('UTF-8', 'ISO-8859-2',"Proprietaire_".$prop->getNom()."-".$prop->getPrenom()).".pdf", 'I'));
     }
 
     public function consultAction($id){

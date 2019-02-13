@@ -175,7 +175,7 @@ class SinistreController extends Controller
         $pdf->SetFillColor(255,255,255);
         $pdf->setTextColor(0);
         $pdf->Cell(50,6,$total,1,0,'L',1);
-        return new Response($pdf->Output("Sinistre_".$sin->getCode(), 'I'));
+        return new Response($pdf->Output("Sinistre_".$sin->getCode().".pdf", 'I'));
     }
 
     public function listeAction()

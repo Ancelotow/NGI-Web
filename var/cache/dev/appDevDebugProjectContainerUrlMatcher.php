@@ -220,6 +220,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     }
 
                     if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf')) {
+                        // ng_gestionnaire_immeuble-pdf
+                        if (preg_match('#^/ng/gestion/immeuble/pdf/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\ImmeubleController::pdfAction',));
+                        }
+
                         // ng_gestionnaire_immeuble-lot-pdf
                         if (0 === strpos($pathinfo, '/ng/gestion/immeuble/pdf/lot') && preg_match('#^/ng/gestion/immeuble/pdf/lot/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                             return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_immeuble-lot-pdf')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\LotController::pdfAction',));
