@@ -22,47 +22,47 @@ class __TwigTemplate_d8babdcaa2bcef17162b6baa54ebcfe27f2b4fad7302406e279e11e1175
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3024776fc5f07c1bd7a04651916045155e53a4c584c3b96ebf35f82d2446d2d0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3024776fc5f07c1bd7a04651916045155e53a4c584c3b96ebf35f82d2446d2d0->enter($__internal_3024776fc5f07c1bd7a04651916045155e53a4c584c3b96ebf35f82d2446d2d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:sinistre:liste.html.twig"));
+        $__internal_80f8e4b3ce642bb1c23cc72c8a0112adc05939da96b9965cc96701060c331f56 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_80f8e4b3ce642bb1c23cc72c8a0112adc05939da96b9965cc96701060c331f56->enter($__internal_80f8e4b3ce642bb1c23cc72c8a0112adc05939da96b9965cc96701060c331f56_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:sinistre:liste.html.twig"));
 
-        $__internal_8e32d9a9ee8b2c4eddef26bae22f560d9738750ce7354f9361d905a602eb4154 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8e32d9a9ee8b2c4eddef26bae22f560d9738750ce7354f9361d905a602eb4154->enter($__internal_8e32d9a9ee8b2c4eddef26bae22f560d9738750ce7354f9361d905a602eb4154_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:sinistre:liste.html.twig"));
+        $__internal_8d2ed3baf4c0b680e48274b886ace523bf325b830a6585db19425a7827511652 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8d2ed3baf4c0b680e48274b886ace523bf325b830a6585db19425a7827511652->enter($__internal_8d2ed3baf4c0b680e48274b886ace523bf325b830a6585db19425a7827511652_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NGGestionnaireBundle:sinistre:liste.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3024776fc5f07c1bd7a04651916045155e53a4c584c3b96ebf35f82d2446d2d0->leave($__internal_3024776fc5f07c1bd7a04651916045155e53a4c584c3b96ebf35f82d2446d2d0_prof);
+        $__internal_80f8e4b3ce642bb1c23cc72c8a0112adc05939da96b9965cc96701060c331f56->leave($__internal_80f8e4b3ce642bb1c23cc72c8a0112adc05939da96b9965cc96701060c331f56_prof);
 
         
-        $__internal_8e32d9a9ee8b2c4eddef26bae22f560d9738750ce7354f9361d905a602eb4154->leave($__internal_8e32d9a9ee8b2c4eddef26bae22f560d9738750ce7354f9361d905a602eb4154_prof);
+        $__internal_8d2ed3baf4c0b680e48274b886ace523bf325b830a6585db19425a7827511652->leave($__internal_8d2ed3baf4c0b680e48274b886ace523bf325b830a6585db19425a7827511652_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_40dc24d9e23106c2bd601cd916ef8cee845536bfc452bf1493ced28a8e64fd3c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_40dc24d9e23106c2bd601cd916ef8cee845536bfc452bf1493ced28a8e64fd3c->enter($__internal_40dc24d9e23106c2bd601cd916ef8cee845536bfc452bf1493ced28a8e64fd3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_909e032f6959148bafa165704f29b7dfc9df93150bd779bd7967ed9c24749aed = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_909e032f6959148bafa165704f29b7dfc9df93150bd779bd7967ed9c24749aed->enter($__internal_909e032f6959148bafa165704f29b7dfc9df93150bd779bd7967ed9c24749aed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_b4e136252ba7e944650eeb2454c42f10856a46817ec7bdcb09e4bc74d1ba7728 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b4e136252ba7e944650eeb2454c42f10856a46817ec7bdcb09e4bc74d1ba7728->enter($__internal_b4e136252ba7e944650eeb2454c42f10856a46817ec7bdcb09e4bc74d1ba7728_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_b2580cad8841a773869edeb76e029b45d9fe763506d72e7b9fa37dd2a3daf738 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b2580cad8841a773869edeb76e029b45d9fe763506d72e7b9fa37dd2a3daf738->enter($__internal_b2580cad8841a773869edeb76e029b45d9fe763506d72e7b9fa37dd2a3daf738_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Sinistres";
         
-        $__internal_b4e136252ba7e944650eeb2454c42f10856a46817ec7bdcb09e4bc74d1ba7728->leave($__internal_b4e136252ba7e944650eeb2454c42f10856a46817ec7bdcb09e4bc74d1ba7728_prof);
+        $__internal_b2580cad8841a773869edeb76e029b45d9fe763506d72e7b9fa37dd2a3daf738->leave($__internal_b2580cad8841a773869edeb76e029b45d9fe763506d72e7b9fa37dd2a3daf738_prof);
 
         
-        $__internal_40dc24d9e23106c2bd601cd916ef8cee845536bfc452bf1493ced28a8e64fd3c->leave($__internal_40dc24d9e23106c2bd601cd916ef8cee845536bfc452bf1493ced28a8e64fd3c_prof);
+        $__internal_909e032f6959148bafa165704f29b7dfc9df93150bd779bd7967ed9c24749aed->leave($__internal_909e032f6959148bafa165704f29b7dfc9df93150bd779bd7967ed9c24749aed_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_33905d19c4adb196f4db76e8f4a74f71061a814561da7f3003f897de16531f46 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_33905d19c4adb196f4db76e8f4a74f71061a814561da7f3003f897de16531f46->enter($__internal_33905d19c4adb196f4db76e8f4a74f71061a814561da7f3003f897de16531f46_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_321f84cda9ff239b1026d56d2b1382df2de21bf133f386b6ab9997b872419a91 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_321f84cda9ff239b1026d56d2b1382df2de21bf133f386b6ab9997b872419a91->enter($__internal_321f84cda9ff239b1026d56d2b1382df2de21bf133f386b6ab9997b872419a91_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_6b2acb8b1e15ceb2644d62e4d482d2fa3018a8fc175de38af8fe295ff46e47f6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6b2acb8b1e15ceb2644d62e4d482d2fa3018a8fc175de38af8fe295ff46e47f6->enter($__internal_6b2acb8b1e15ceb2644d62e4d482d2fa3018a8fc175de38af8fe295ff46e47f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_49be01d24793de904090657c2162362c8e800a394340b96e44d24b0ece34f20a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_49be01d24793de904090657c2162362c8e800a394340b96e44d24b0ece34f20a->enter($__internal_49be01d24793de904090657c2162362c8e800a394340b96e44d24b0ece34f20a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "<div class=\"container\">
@@ -112,7 +112,7 @@ class __TwigTemplate_d8babdcaa2bcef17162b6baa54ebcfe27f2b4fad7302406e279e11e1175
                 // line 29
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["unS"], "lot", array()), "num", array()), "html", null, true);
                 echo "</td>
-                    <td><a href=\"/ng/gestion/sinistre/";
+                    <td><a href=\"/ng/gestion/sinistre/code/";
                 // line 30
                 echo twig_escape_filter($this->env, $this->getAttribute($context["unS"], "code", array()), "html", null, true);
                 echo "\" class=\"btn btn-outline-success\">";
@@ -131,7 +131,7 @@ class __TwigTemplate_d8babdcaa2bcef17162b6baa54ebcfe27f2b4fad7302406e279e11e1175
         } else {
             // line 36
             echo "        <div class=\"alert alert-warning\">
-            Il n'y aucune Copropriétés. Veuillez en ajouter.
+            Il n'y aucun Sinistres. Veuillez en ajouter.
         </div>
     ";
         }
@@ -141,7 +141,7 @@ class __TwigTemplate_d8babdcaa2bcef17162b6baa54ebcfe27f2b4fad7302406e279e11e1175
         // line 41
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted(array(0 => "ROLE_ADMIN", 1 => "ROLE_GESTIONNAIRE"))) {
             // line 42
-            echo "        <a href=\"/ng/gestion/immeuble/ajout\" class=\"btn btn-outline-ngi\">";
+            echo "        <a href=\"/ng/gestion/immeuble\" class=\"btn btn-outline-ngi\">";
             echo twig_escape_filter($this->env, twig_upper_filter($this->env, "ajouter"), "html", null, true);
             echo "</a>
     ";
@@ -151,10 +151,10 @@ class __TwigTemplate_d8babdcaa2bcef17162b6baa54ebcfe27f2b4fad7302406e279e11e1175
 </div>
 ";
         
-        $__internal_6b2acb8b1e15ceb2644d62e4d482d2fa3018a8fc175de38af8fe295ff46e47f6->leave($__internal_6b2acb8b1e15ceb2644d62e4d482d2fa3018a8fc175de38af8fe295ff46e47f6_prof);
+        $__internal_49be01d24793de904090657c2162362c8e800a394340b96e44d24b0ece34f20a->leave($__internal_49be01d24793de904090657c2162362c8e800a394340b96e44d24b0ece34f20a_prof);
 
         
-        $__internal_33905d19c4adb196f4db76e8f4a74f71061a814561da7f3003f897de16531f46->leave($__internal_33905d19c4adb196f4db76e8f4a74f71061a814561da7f3003f897de16531f46_prof);
+        $__internal_321f84cda9ff239b1026d56d2b1382df2de21bf133f386b6ab9997b872419a91->leave($__internal_321f84cda9ff239b1026d56d2b1382df2de21bf133f386b6ab9997b872419a91_prof);
 
     }
 
@@ -212,19 +212,19 @@ class __TwigTemplate_d8babdcaa2bcef17162b6baa54ebcfe27f2b4fad7302406e279e11e1175
                     <td>{{ unS.date }}</td>
                     <td>{{ unS.lot.copro.code }}</td>
                     <td>{{ unS.lot.num }}</td>
-                    <td><a href=\"/ng/gestion/sinistre/{{ unS.code }}\" class=\"btn btn-outline-success\">{{ 'consulter'|upper }}</a></td>
+                    <td><a href=\"/ng/gestion/sinistre/code/{{ unS.code }}\" class=\"btn btn-outline-success\">{{ 'consulter'|upper }}</a></td>
                 </tr>
             {% endfor %}
             </tbody>
         </table><br/>
     {% else %}
         <div class=\"alert alert-warning\">
-            Il n'y aucune Copropriétés. Veuillez en ajouter.
+            Il n'y aucun Sinistres. Veuillez en ajouter.
         </div>
     {% endif %}
 
     {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
-        <a href=\"/ng/gestion/immeuble/ajout\" class=\"btn btn-outline-ngi\">{{ 'ajouter'|upper }}</a>
+        <a href=\"/ng/gestion/immeuble\" class=\"btn btn-outline-ngi\">{{ 'ajouter'|upper }}</a>
     {% endif %}
 
 </div>

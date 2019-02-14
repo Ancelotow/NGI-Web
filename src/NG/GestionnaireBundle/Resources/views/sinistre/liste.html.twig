@@ -27,19 +27,19 @@
                     <td>{{ unS.date }}</td>
                     <td>{{ unS.lot.copro.code }}</td>
                     <td>{{ unS.lot.num }}</td>
-                    <td><a href="/ng/gestion/sinistre/{{ unS.code }}" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
+                    <td><a href="/ng/gestion/sinistre/code/{{ unS.code }}" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
                 </tr>
             {% endfor %}
             </tbody>
         </table><br/>
     {% else %}
         <div class="alert alert-warning">
-            Il n'y aucune Copropriétés. Veuillez en ajouter.
+            Il n'y aucun Sinistres. Veuillez en ajouter.
         </div>
     {% endif %}
 
     {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
-        <a href="/ng/gestion/immeuble/ajout" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+        <a href="/ng/gestion/immeuble" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
     {% endif %}
 
 </div>

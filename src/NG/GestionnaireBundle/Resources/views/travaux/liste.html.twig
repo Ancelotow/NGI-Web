@@ -1,0 +1,46 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Travaux{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h4>Liste des Travaux référencé</h4><br/>
+
+        {% if tvx|length > 0 %}
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Date de début</th>
+                        <th scope="col">Date de fin</th>
+                        <th scope="col">Code immeuble</th>
+                        <th scope="col">Consulter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for unT in tvx %}
+                    <tr>
+                        <td>{{ unT.code }}</td>
+                        <td>{{ unT.type }}</td>
+                        <td>{{ unT.dateDebut }}</td>
+                        <td>{{ unT.dateFin }}</td>
+                        <td>{{ unT.copro.code }}</td>
+                        <td><a href="/ng/gestion/travaux/code/{{ unT.code }}" class="btn btn-outline-success">{{ 'consulter'|upper }}</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table><br/>
+        {% else %}
+            <div class="alert alert-warning">
+                Il n'y aucun Travaux. Veuillez en ajouter.
+            </div>
+        {% endif %}
+
+        {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+            <a href="/ng/gestion/travaux/ajout" class="btn btn-outline-ngi">{{ 'ajouter'|upper }}</a>
+        {% endif %}
+
+    </div>
+{% endblock %}

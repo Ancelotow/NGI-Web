@@ -1,0 +1,14 @@
+{% extends':administrateur:base.html.twig' %}
+
+{% block title %}Erreur 500{% endblock %}
+
+{% block navbar %}{{ 'erreur 500'|upper }}{% endblock %}
+
+{% block body %}
+
+    <center>
+        <h4>Erreur 500 : Ce code travaux n'éxiste pas.</h4><br/>
+        <a href="/ng/gestion/travaux" class="btn btn-outline-ngi">{{ "retour à la liste des travaux"|upper }}</a>
+    </center>
+
+{% endblock %}

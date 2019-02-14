@@ -12,6 +12,8 @@ parameters:
     ag_directory: '%kernel.project_dir%/web/document/pdf-ag'
     cs_directory: '%kernel.project_dir%/web/document/pdf-cs'
     image-sinistre_directory: '%kernel.project_dir%/web/image/sinistre'
+    travaux_avant: '%kernel.project_dir%/web/image/travaux/avant'
+    travaux_apres: '%kernel.project_dir%/web/image/travaux/apres'
 
 framework:
     #esi: ~

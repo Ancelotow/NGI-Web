@@ -100,7 +100,7 @@ class SinistreController extends Controller
             $em->persist($se);
             $em->flush();
             $request->getSession()->getFlashBag()->add('notice', 'Cout sinistre bien enregistrer');
-            return $this->redirect('/ng/gestion/sinistre/'.$sin->getCode());
+            return $this->redirect('/ng/gestion/sinistre/code/'.$sin->getCode());
         }
         return $this->render('NGGestionnaireBundle:sinistre:index.html.twig', array(
             "sin"=>$sin,

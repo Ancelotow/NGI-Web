@@ -1,0 +1,61 @@
+{% extends'base.html.twig' %}
+
+{% block title %}Travaux{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <center>
+
+            <h4>Ajouter des Travaux</h4><br/>
+
+            {{ form_start(form, {'method' : 'POST'}) }}
+
+            {% if error == true %}
+                <div class="alert alert-warning">
+                    Ce code travaux éxiste déjâ.
+                </div>
+            {% endif %}
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.code) }}
+                    {{ form_widget(form.code, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.copro) }}
+                    {{ form_widget(form.copro, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.type) }}
+                    {{ form_widget(form.type, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    {{ form_label(form.imgAv) }}
+                    {{ form_widget(form.imgAv, {'attr' :  {'class' : 'form-control'}}) }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Date de début</label>
+                    <input type="date" name="debut" class="form-control" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Date de fin</label>
+                    <input type="date" name="fin" class="form-control" required />
+                </div>
+            </div>
+
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+
+            {{ form_end(form) }}
+
+        </center>
+    </div>
+{% endblock %}

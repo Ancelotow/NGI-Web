@@ -269,13 +269,31 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
                 elseif (0 === strpos($pathinfo, '/ng/gestion/sinistre')) {
                     // ng_gestionnaire_sinistre-index
-                    if (preg_match('#^/ng/gestion/sinistre/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
+                    if (0 === strpos($pathinfo, '/ng/gestion/sinistre/code') && preg_match('#^/ng/gestion/sinistre/code/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
                         return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_sinistre-index')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::indexAction',));
                     }
 
                     // ng_gestionnaire_sinistre-liste
                     if ('/ng/gestion/sinistre' === $pathinfo) {
                         return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\SinistreController::listeAction',  '_route' => 'ng_gestionnaire_sinistre-liste',);
+                    }
+
+                }
+
+                elseif (0 === strpos($pathinfo, '/ng/gestion/travaux')) {
+                    // ng_gestionnaire_travaux-liste
+                    if ('/ng/gestion/travaux' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\TravauxController::listeAction',  '_route' => 'ng_gestionnaire_travaux-liste',);
+                    }
+
+                    // ng_gestionnaire_travaux-add
+                    if ('/ng/gestion/travaux/ajout' === $pathinfo) {
+                        return array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\TravauxController::addAction',  '_route' => 'ng_gestionnaire_travaux-add',);
+                    }
+
+                    // ng_gestionnaire_travaux-index
+                    if (0 === strpos($pathinfo, '/ng/gestion/travaux/code') && preg_match('#^/ng/gestion/travaux/code/(?P<code>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'ng_gestionnaire_travaux-index')), array (  '_controller' => 'NG\\GestionnaireBundle\\Controller\\TravauxController::indexAction',));
                     }
 
                 }

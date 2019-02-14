@@ -1,0 +1,102 @@
+{% extends'base.html.twig' %}
+
+{% block title %}{{ tvx.code }}{% endblock %}
+
+
+{% block body %}
+    <script id="_carbonads_projs" type="text/javascript" src="//srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&amp;callback=_carbonads_go"></script>
+    <div class="container">
+
+        <center>
+            <h2>Travaux : {{ tvx.code }}</h2><br/>
+            <a href="/ng/gestion/travaux/pdf/{{ tvx.id }}" target="_blank" class="btn btn-outline-danger">Voir le PDF</a>
+        </center><br/><br/>
+
+        <div class="row">
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">Immeuble : </strong>{{ tvx.copro.code }}</h4>
+            </div>
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">Type :  </strong>{{ tvx.type }}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">Date de début : </strong>{{ tvx.dateDebut }}</h4>
+            </div>
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">Date de fin : </strong>{{ tvx.dateFin }}</h4>
+            </div>
+        </div><br/>
+
+        {% if ents|length == 0 %}
+            <div class="alert alert-warning">
+                Aucune entreprise ne s'est occupé de ces travaux.
+            </div>
+        {% else %}
+            <table class="table table-hover table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Logo</th>
+                    <th scope="col">Entreprise</th>
+                    <th scope="col">Date de début</th>
+                    <th scope="col">Date de fin</th>
+                    <th scope="col">Coût</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for uneE in ents %}
+                    <tr>
+                        <td>
+                            <img alt="logo_ent" src="{{ asset('image/partenaires_logo/' ~ uneE.ent.logo) }}" class="img-fluid img-thumbnail" width="50" height="50" />
+                        </td>
+                        <td>{{ uneE.ent.nom }}</td>
+                        <td>{{ uneE.dateDebut }}</td>
+                        <td>{{ uneE.dateFin }}</td>
+                        <td>{{ uneE.cout }} €</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table><br/>
+        {% endif %}
+        {% if is_granted(['ROLE_ADMIN', 'ROLE_GESTIONNAIRE']) %}
+            <center>
+                {{ form_start(formC, {'method' : 'POST'}) }}
+                <div class="form-row">
+                    <div class="col">
+                        {{ form_widget(formC.ent, {'attr' :  {'class' : 'form-control'}}) }}
+                    </div>
+                    <div class="col">
+                        {{ form_widget(formC.cout, {'attr' :  {'class' : 'form-control', 'placeholder' : "Coût en €"}}) }}
+                    </div>
+                    <div class="col">
+                        <input type="date" name="debut" class="form-control" placeholder="Date de début" required />
+                    </div>
+                    <div class="col">
+                        <input type="date" name="fin" class="form-control" placeholder="Date de fin" required />
+                    </div>
+                    <div class="col">
+                        {{ form_widget(formC.valid, {'attr' : {'class' : 'btn btn-outline-ngi'}}) }}
+                    </div></div>
+                {{ form_end(formC) }}
+            </center><br/><br/>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">{{ "avant"|upper }}</strong></h4>
+                <img src="{{ asset('image/travaux/avant/' ~ tvx.imgAv) }}" alt="avant" width="300" height="350"/>
+            </div>
+            <div class="col-4 col-sm-6">
+                <h4><strong style="color:#AE1F23;">{{ "après"|upper }}</strong></h4>
+                {% if tvx.imgAp == "vide" %}
+                    <img src="{{ asset('image/default.png') }}" alt="après" width="300" height="350"/>
+                {% else %}
+                    <img src="{{ asset('image/travaux/apres/' ~ tvx.imgAp) }}" alt="après" width="300" height="350"/>
+                {% endif %}
+            </div>
+        </div><br/>
+
+    </div>
+
+{% endblock %}
